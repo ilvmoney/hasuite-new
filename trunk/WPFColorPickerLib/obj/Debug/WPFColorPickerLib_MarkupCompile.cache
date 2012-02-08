@@ -4,7 +4,7 @@
 library
 C#
 .cs
-C:\Users\Travis\Desktop\HaSuite\WPFColorPickerLib\obj\Debug\
+C:\Users\Travis\Desktop\hasuite-new\WPFColorPickerLib\obj\Debug\
 WPFColorPickerLib
 none
 false
@@ -13,6 +13,8 @@ DEBUG;TRACE
 2-1913917420
 
 51558410610
-9-840861141
+10-1909027739
 ColorDialog.xaml;ColorPicker.xaml;
+
+False
 

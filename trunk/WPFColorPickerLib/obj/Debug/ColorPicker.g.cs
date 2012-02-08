@@ -28,6 +28,7 @@ using System.Windows.Media.Media3D;
 using System.Windows.Media.TextFormatting;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Shell;
 
 
 namespace WPFColorPickerLib {
@@ -36,10 +37,12 @@ namespace WPFColorPickerLib {
     /// <summary>
     /// ColorPicker
     /// </summary>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "4.0.0.0")]
     public partial class ColorPicker : System.Windows.Controls.UserControl, System.Windows.Markup.IComponentConnector {
         
         
         #line 43 "..\..\ColorPicker.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Image ImgSqaure1;
         
         #line default
@@ -47,6 +50,7 @@ namespace WPFColorPickerLib {
         
         
         #line 47 "..\..\ColorPicker.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Image ImgSqaure2;
         
         #line default
@@ -54,6 +58,7 @@ namespace WPFColorPickerLib {
         
         
         #line 51 "..\..\ColorPicker.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Image ImgCircle1;
         
         #line default
@@ -61,6 +66,7 @@ namespace WPFColorPickerLib {
         
         
         #line 56 "..\..\ColorPicker.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Grid MainGrid;
         
         #line default
@@ -68,6 +74,7 @@ namespace WPFColorPickerLib {
         
         
         #line 77 "..\..\ColorPicker.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Image ColorImage;
         
         #line default
@@ -75,6 +82,7 @@ namespace WPFColorPickerLib {
         
         
         #line 84 "..\..\ColorPicker.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Canvas canvasImage;
         
         #line default
@@ -82,6 +90,7 @@ namespace WPFColorPickerLib {
         
         
         #line 94 "..\..\ColorPicker.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Shapes.Ellipse ellipsePixel;
         
         #line default
@@ -89,6 +98,7 @@ namespace WPFColorPickerLib {
         
         
         #line 112 "..\..\ColorPicker.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.InkPresenter previewPresenter;
         
         #line default
@@ -96,6 +106,7 @@ namespace WPFColorPickerLib {
         
         
         #line 130 "..\..\ColorPicker.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBox txtAlpha;
         
         #line default
@@ -103,6 +114,7 @@ namespace WPFColorPickerLib {
         
         
         #line 135 "..\..\ColorPicker.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBox txtAlphaHex;
         
         #line default
@@ -110,6 +122,7 @@ namespace WPFColorPickerLib {
         
         
         #line 146 "..\..\ColorPicker.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBox txtRed;
         
         #line default
@@ -117,6 +130,7 @@ namespace WPFColorPickerLib {
         
         
         #line 151 "..\..\ColorPicker.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBox txtRedHex;
         
         #line default
@@ -124,6 +138,7 @@ namespace WPFColorPickerLib {
         
         
         #line 162 "..\..\ColorPicker.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBox txtGreen;
         
         #line default
@@ -131,6 +146,7 @@ namespace WPFColorPickerLib {
         
         
         #line 168 "..\..\ColorPicker.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBox txtGreenHex;
         
         #line default
@@ -138,6 +154,7 @@ namespace WPFColorPickerLib {
         
         
         #line 180 "..\..\ColorPicker.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBox txtBlue;
         
         #line default
@@ -145,6 +162,7 @@ namespace WPFColorPickerLib {
         
         
         #line 185 "..\..\ColorPicker.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBox txtBlueHex;
         
         #line default
@@ -152,6 +170,7 @@ namespace WPFColorPickerLib {
         
         
         #line 194 "..\..\ColorPicker.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBox txtAll;
         
         #line default
@@ -159,6 +178,7 @@ namespace WPFColorPickerLib {
         
         
         #line 202 "..\..\ColorPicker.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Border AlphaBorder;
         
         #line default
@@ -166,6 +186,7 @@ namespace WPFColorPickerLib {
         
         
         #line 211 "..\..\ColorPicker.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Slider AlphaSlider;
         
         #line default
@@ -194,6 +215,8 @@ namespace WPFColorPickerLib {
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Never)]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Design", "CA1033:InterfaceMethodsShouldBeCallableByChildTypes")]
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily")]
         void System.Windows.Markup.IComponentConnector.Connect(int connectionId, object target) {
             switch (connectionId)
             {
