@@ -1,4 +1,4 @@
-﻿using System;
+ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -38,7 +38,7 @@ namespace HaCreator.GUI
                 DialogResult msgbx = MessageBox.Show("Are you sure you want to save Map.wz?", "Save confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (msgbx == DialogResult.Yes)
                 {
-                    Program.WzManager.SaveMap(Program.WzManager.getWzPath());
+                  Program.WzManager.SaveMap(Program.WzManager.getWzPath() + "\\EdittedWZ"); //Whoops, forgot to add in EdittedWZ
                 }
             
             } /*else {
