@@ -1,0 +1,5 @@
+C:\Users\Travis\Desktop\HaSuite\AppModule\bin\Debug\AppModule.dll
+C:\Users\Travis\Desktop\HaSuite\AppModule\bin\Debug\AppModule.pdb
+C:\Users\Travis\Desktop\HaSuite\AppModule\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Travis\Desktop\HaSuite\AppModule\obj\Debug\AppModule.dll
+C:\Users\Travis\Desktop\HaSuite\AppModule\obj\Debug\AppModule.pdb

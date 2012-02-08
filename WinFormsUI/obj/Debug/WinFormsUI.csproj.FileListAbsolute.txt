@@ -1,0 +1,9 @@
+C:\Users\Travis\Desktop\HaSuite\WinFormsUI\bin\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Users\Travis\Desktop\HaSuite\WinFormsUI\bin\Debug\WeifenLuo.WinFormsUI.Docking.pdb
+C:\Users\Travis\Desktop\HaSuite\WinFormsUI\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Travis\Desktop\HaSuite\WinFormsUI\obj\Debug\WeifenLuo.WinFormsUI.Docking.Resources.resources
+C:\Users\Travis\Desktop\HaSuite\WinFormsUI\obj\Debug\WeifenLuo.WinFormsUI.Docking.Strings.resources
+C:\Users\Travis\Desktop\HaSuite\WinFormsUI\obj\Debug\ResGen.read.1.tlog
+C:\Users\Travis\Desktop\HaSuite\WinFormsUI\obj\Debug\ResGen.write.1.tlog
+C:\Users\Travis\Desktop\HaSuite\WinFormsUI\obj\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Users\Travis\Desktop\HaSuite\WinFormsUI\obj\Debug\WeifenLuo.WinFormsUI.Docking.pdb

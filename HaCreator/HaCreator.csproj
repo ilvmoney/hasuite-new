@@ -1,0 +1,593 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{679DD557-5E1E-447E-B48C-0F082E5FB1F4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HaCreator</RootNamespace>
+    <AssemblyName>HaCreator</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>en-US</TargetCulture>
+    <ProductName>HaCreator 2</ProductName>
+    <PublisherName>haha01haha01</PublisherName>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Optimize>true</Optimize>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <Win32Resource>C:\Users\Travis\Desktop\HaSuite\ResourceTemplate.res</Win32Resource>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\x86\Debug\HaCreator.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\x86\Release\HaCreator.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Itanium'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Itanium\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>Itanium</PlatformTarget>
+    <CodeAnalysisLogFile>bin\x86\Debug\HaCreator.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Itanium'">
+    <OutputPath>bin\Itanium\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <PlatformTarget>Itanium</PlatformTarget>
+    <CodeAnalysisLogFile>bin\x86\Release\HaCreator.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>HaCreator.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar.Design, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DotNetBar\Bin\DevComponents.DotNetBar.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>C:\Program Files (x86)\DotNetBar\Bin\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Graphics.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.XML" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomControls\ScrollablePictureBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\ScrollablePictureBox.Designer.cs">
+      <DependentUpon>ScrollablePictureBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\TabPages\BaseTab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\TabPages\DropdownButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\TabPages\FlickerFreeControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\TabPages\PageCollection.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\TabPages\TabPage.cs" />
+    <Compile Include="CustomControls\TabPages\TabPageControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\TabPages\TabView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\AlphaColorPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\Better.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <None Include="Arial.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Compile Include="GUI\Editor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Editor.Designer.cs">
+      <DependentUpon>Editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Save.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Save.Designer.cs">
+      <DependentUpon>Save.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\InstanceEditor\BackgroundInstanceEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\InstanceEditor\BackgroundInstanceEditor.Designer.cs">
+      <DependentUpon>BackgroundInstanceEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\InstanceEditor\MapBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\InstanceEditor\MapBrowser.Designer.cs">
+      <DependentUpon>MapBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\InstanceEditor\PnSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\InstanceEditor\PnSelector.Designer.cs">
+      <DependentUpon>PnSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\InstanceEditor\PortalInstanceEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\InstanceEditor\PortalInstanceEditor.Designer.cs">
+      <DependentUpon>PortalInstanceEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\InstanceEditor\FootholdEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\InstanceEditor\FootholdEditor.Designer.cs">
+      <DependentUpon>FootholdEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\InstanceEditor\LifeInstanceEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\InstanceEditor\LifeInstanceEditor.Designer.cs">
+      <DependentUpon>LifeInstanceEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\InstanceEditor\ObjQuestInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\InstanceEditor\ObjQuestInput.Designer.cs">
+      <DependentUpon>ObjQuestInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\InstanceEditor\ReactorInstanceEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\InstanceEditor\ReactorInstanceEditor.Designer.cs">
+      <DependentUpon>ReactorInstanceEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\InstanceEditor\RopeInstanceEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\InstanceEditor\RopeInstanceEditor.Designer.cs">
+      <DependentUpon>RopeInstanceEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\InstanceEditor\GeneralInstanceEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\InstanceEditor\GeneralInstanceEditor.Designer.cs">
+      <DependentUpon>GeneralInstanceEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\InstanceEditor\ObjectInstanceEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\InstanceEditor\ObjectInstanceEditor.Designer.cs">
+      <DependentUpon>ObjectInstanceEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapEditor\BoardItemsManager.cs" />
+    <Compile Include="GUI\ExceptionHandler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ExceptionHandler.Designer.cs">
+      <DependentUpon>ExceptionHandler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\InfoEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\InfoEditor.Designer.cs">
+      <DependentUpon>InfoEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Initialization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Initialization.designer.cs">
+      <DependentUpon>Initialization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KoolkControls\KoolkLVContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="KoolkControls\KoolkLVItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Load.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Load.designer.cs">
+      <DependentUpon>Load.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapEditor\Board.cs" />
+    <Compile Include="CustomControls\DirectXHolder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\DirectXHolder.Designer.cs">
+      <DependentUpon>DirectXHolder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapEditor\FontEngine.cs" />
+    <Compile Include="MapEditor\InputHandler.cs" />
+    <Compile Include="MapEditor\ISnappable.cs" />
+    <Compile Include="MapEditor\Layer.cs" />
+    <Compile Include="MapEditor\MapleInfo.cs" />
+    <Compile Include="MapEditor\MapleInstance.cs" />
+    <Compile Include="MapEditor\MiscItems.cs" />
+    <Compile Include="MapEditor\Mouse.cs" />
+    <Compile Include="MapEditor\MapleShape.cs" />
+    <Compile Include="MapSimulator\Character.cs" />
+    <Compile Include="MapSimulator\DXObject.cs" />
+    <Compile Include="MapSimulator\MapSimulator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MapSimulator\MapSimulator.Designer.cs">
+      <DependentUpon>MapSimulator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WzStructure\MapLoader.cs" />
+    <Compile Include="WzStructure\MapSaver.cs" />
+    <EmbeddedResource Include="CustomControls\AlphaColorPicker.resx">
+      <DependentUpon>AlphaColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\ScrollablePictureBox.resx">
+      <DependentUpon>ScrollablePictureBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Editor.resx">
+      <DependentUpon>Editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ExceptionHandler.resx">
+      <DependentUpon>ExceptionHandler.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\InfoEditor.resx">
+      <DependentUpon>InfoEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Initialization.resx">
+      <DependentUpon>Initialization.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\InstanceEditor\BackgroundInstanceEditor.resx">
+      <DependentUpon>BackgroundInstanceEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\InstanceEditor\MapBrowser.resx">
+      <DependentUpon>MapBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\InstanceEditor\PnSelector.resx">
+      <DependentUpon>PnSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\InstanceEditor\PortalInstanceEditor.resx">
+      <DependentUpon>PortalInstanceEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\InstanceEditor\FootholdEditor.resx">
+      <DependentUpon>FootholdEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\InstanceEditor\LifeInstanceEditor.resx">
+      <DependentUpon>LifeInstanceEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\InstanceEditor\ObjQuestInput.resx">
+      <DependentUpon>ObjQuestInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\InstanceEditor\ReactorInstanceEditor.resx">
+      <DependentUpon>ReactorInstanceEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\InstanceEditor\RopeInstanceEditor.resx">
+      <DependentUpon>RopeInstanceEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\InstanceEditor\GeneralInstanceEditor.resx">
+      <DependentUpon>GeneralInstanceEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\InstanceEditor\ObjectInstanceEditor.resx">
+      <DependentUpon>ObjectInstanceEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Load.resx">
+      <DependentUpon>Load.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Save.resx">
+      <DependentUpon>Save.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UserSettingsForm.resx">
+      <DependentUpon>UserSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapEditor\MultiBoardControl.resx">
+      <DependentUpon>MultiBoardControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapSimulator\MapSimulator.resx">
+      <DependentUpon>MapSimulator.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\TileSetBrowser.resx">
+      <DependentUpon>TileSetBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <Compile Include="MapEditor\MultiBoardControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MapEditor\MultiBoardControl.Designer.cs">
+      <DependentUpon>MultiBoardControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapEditor\Snapping.cs" />
+    <Compile Include="MapEditor\TileObjSet.cs" />
+    <Compile Include="MapEditor\UndoRedoManager.cs" />
+    <Compile Include="MapEditor\WzFileManager.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UserSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\UserSettingsForm.Designer.cs">
+      <DependentUpon>UserSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\TileSetBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\TileSetBrowser.Designer.cs">
+      <DependentUpon>TileSetBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WzSettings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HaRepackerLib\HaRepackerLib.csproj">
+      <Project>{B68C971F-4B8A-44A3-88D0-6213D1A512E7}</Project>
+      <Name>HaRepackerLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HaRepackerRemake\HaRepackerRemake.csproj">
+      <Project>{0B7155EF-1EB0-4FAE-BA56-8064CBAF2BEA}</Project>
+      <Name>HaRepackerRemake</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MapleLib\MapleLib.csproj">
+      <Project>{28AAB36D-942E-4476-A000-0E9DE380F390}</Project>
+      <Name>MapleLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NAudio\NAudio.csproj">
+      <Project>{DA4F02E3-0B5E-42CD-B8D9-5583FA51D66E}</Project>
+      <Name>NAudio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WPFColorPickerLib\WPFColorPickerLib.csproj">
+      <Project>{587ACFBA-1A74-4A38-98C4-69442ECCB7DC}</Project>
+      <Name>WPFColorPickerLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Settings.wz" />
+    <None Include="Resources\AboutButton.Image.png" />
+    <None Include="Resources\ExitButton.Image.png" />
+    <None Include="Resources\Folder.png" />
+    <None Include="Resources\Save.png" />
+    <None Include="Resources\settings-icon.gif" />
+    <None Include="Resources\Exit.png" />
+    <None Include="Resources\About.png" />
+    <None Include="Resources\Settings.png" />
+    <None Include="Resources\Tile.PNG" />
+    <None Include="Resources\Object2.png" />
+    <None Include="Resources\Npc.png" />
+    <None Include="Resources\Mob.png" />
+    <None Include="Resources\Cursor.png" />
+    <None Include="Resources\Reactor.png" />
+    <None Include="Resources\Portal.png" />
+    <None Include="Resources\Settings_big.png" />
+    <None Include="Resources\magnet_32.png" />
+    <None Include="Resources\ShowVR.png" />
+    <None Include="Resources\Minimap.png" />
+    <None Include="Resources\Undo.png" />
+    <None Include="Resources\redo.png" />
+    <None Include="Resources\redo1.png" />
+    <None Include="Resources\mapEditMenu.png" />
+    <None Include="Resources\pause.png" />
+    <None Include="Resources\Play.png" />
+    <None Include="Resources\Untitled-1.png" />
+    <None Include="Resources\diagram_parallax.png" />
+    <None Include="Resources\silver-play-button.png" />
+    <None Include="Resources\Play-1-Hot-icon.png" />
+    <None Include="Resources\RegenMinimap.png" />
+    <None Include="Resources\Sharingan32.png" />
+    <None Include="Resources\Sharingan60.png" />
+    <None Include="Resources\help_icon.png" />
+    <Content Include="sharingan.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Xna.Framework.4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft XNA Framework Redistributable 4.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="DevComponents.DotNetBar.Design">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Xna.Framework">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Xna.Framework.Graphics">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

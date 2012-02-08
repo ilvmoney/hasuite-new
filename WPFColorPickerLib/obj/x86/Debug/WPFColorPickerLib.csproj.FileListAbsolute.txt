@@ -1,0 +1,16 @@
+C:\Users\Travis\Desktop\HaSuite\WPFColorPickerLib\bin\x86\Debug\WPFColorPickerLib.dll
+C:\Users\Travis\Desktop\HaSuite\WPFColorPickerLib\bin\x86\Debug\WPFColorPickerLib.pdb
+C:\Users\Travis\Desktop\HaSuite\WPFColorPickerLib\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Travis\Desktop\HaSuite\WPFColorPickerLib\obj\x86\Debug\ColorPicker.baml
+C:\Users\Travis\Desktop\HaSuite\WPFColorPickerLib\obj\x86\Debug\ColorDialog.g.cs
+C:\Users\Travis\Desktop\HaSuite\WPFColorPickerLib\obj\x86\Debug\ColorPicker.g.cs
+C:\Users\Travis\Desktop\HaSuite\WPFColorPickerLib\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Travis\Desktop\HaSuite\WPFColorPickerLib\obj\x86\Debug\WPFColorPickerLib_MarkupCompile.cache
+C:\Users\Travis\Desktop\HaSuite\WPFColorPickerLib\obj\x86\Debug\WPFColorPickerLib_MarkupCompile.lref
+C:\Users\Travis\Desktop\HaSuite\WPFColorPickerLib\obj\x86\Debug\ColorDialog.baml
+C:\Users\Travis\Desktop\HaSuite\WPFColorPickerLib\obj\x86\Debug\WPFColorPickerLib.g.resources
+C:\Users\Travis\Desktop\HaSuite\WPFColorPickerLib\obj\x86\Debug\WPFColorPickerLib.Properties.Resources.resources
+C:\Users\Travis\Desktop\HaSuite\WPFColorPickerLib\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\Travis\Desktop\HaSuite\WPFColorPickerLib\obj\x86\Debug\ResGen.write.1.tlog
+C:\Users\Travis\Desktop\HaSuite\WPFColorPickerLib\obj\x86\Debug\WPFColorPickerLib.dll
+C:\Users\Travis\Desktop\HaSuite\WPFColorPickerLib\obj\x86\Debug\WPFColorPickerLib.pdb
