@@ -1,0 +1,8 @@
+C:\Users\Travis\Desktop\HaSuite\MapleLib\bin\x86\Debug\MapleLib.dll
+C:\Users\Travis\Desktop\HaSuite\MapleLib\bin\x86\Debug\MapleLib.pdb
+C:\Users\Travis\Desktop\HaSuite\MapleLib\bin\x86\Debug\NAudio.dll
+C:\Users\Travis\Desktop\HaSuite\MapleLib\bin\x86\Debug\NAudio.pdb
+C:\Users\Travis\Desktop\HaSuite\MapleLib\bin\x86\Debug\NAudio.xml
+C:\Users\Travis\Desktop\HaSuite\MapleLib\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Travis\Desktop\HaSuite\MapleLib\obj\x86\Debug\MapleLib.dll
+C:\Users\Travis\Desktop\HaSuite\MapleLib\obj\x86\Debug\MapleLib.pdb
