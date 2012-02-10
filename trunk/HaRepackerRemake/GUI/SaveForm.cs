@@ -60,7 +60,7 @@ namespace HaRepacker.GUI
             string newWzLoc;
             if (wzf.FilePath != null && wzf.FilePath.ToLower() == dialog.FileName.ToLower())
             {
-                wzf.SaveToDisk(dialog.FileName + "$tmp");
+                wzf.SaveToDisk(dialog.FileName + "$tmp", null);
                 wzNode.Delete();
                 File.Delete(dialog.FileName);
                 File.Move(dialog.FileName + "$tmp", dialog.FileName);
@@ -68,7 +68,7 @@ namespace HaRepacker.GUI
             }
             else
             {
-                wzf.SaveToDisk(dialog.FileName);
+                wzf.SaveToDisk(dialog.FileName, null);
                 wzNode.Delete();
                 newWzLoc = dialog.FileName;
             }

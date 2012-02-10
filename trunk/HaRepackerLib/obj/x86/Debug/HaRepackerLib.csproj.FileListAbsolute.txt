@@ -28,7 +28,7 @@ C:\Users\Travis\Desktop\HaSuite\HaRepackerLib\obj\x86\Debug\HaRepackerLib.Replac
 C:\Users\Travis\Desktop\HaSuite\HaRepackerLib\obj\x86\Debug\HaRepackerLib.SearchOptionsForm.resources
 C:\Users\Travis\Desktop\HaSuite\HaRepackerLib\obj\x86\Debug\HaRepackerLib.Controls.SoundPlayer.resources
 C:\Users\Travis\Desktop\HaSuite\HaRepackerLib\obj\x86\Debug\HaRepackerLib.XYPanel.resources
-C:\Users\Travis\Desktop\HaSuite\HaRepackerLib\obj\x86\Debug\ResGen.read.1.tlog
-C:\Users\Travis\Desktop\HaSuite\HaRepackerLib\obj\x86\Debug\ResGen.write.1.tlog
 C:\Users\Travis\Desktop\HaSuite\HaRepackerLib\obj\x86\Debug\HaRepackerLib.dll
 C:\Users\Travis\Desktop\HaSuite\HaRepackerLib\obj\x86\Debug\HaRepackerLib.pdb
+C:\Users\Travis\Desktop\HaSuite\HaRepackerLib\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Travis\Desktop\HaSuite\HaRepackerLib\obj\x86\Debug\GenerateResource.write.1.tlog

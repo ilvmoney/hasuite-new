@@ -1,4 +1,4 @@
- using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -216,7 +216,7 @@ namespace HaCreator.GUI
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-            new Save().Show();
+            new Save(multiBoard).Show();
         }
 
         private void closeButton_Click(object sender, EventArgs e)
@@ -382,15 +382,10 @@ namespace HaCreator.GUI
 
         private void mapSimulatorButton_Click(object sender, EventArgs e)
         {
-          //Untill simulator is ready, we're not gonna interact with it -DeathRight
-          #if !SIM_READY
-            MessageBox.Show("Sorry, the Map Simulator isn't finished yet.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-          #else
             multiBoard.DeviceReady = false;
             MapSimulator.MapSimulator.CreateMapSimulator(multiBoard.SelectedBoard).ShowDialog();
             multiBoard.DeviceReady = true;
             multiBoard.RenderFrame();
-          #endif
         }
 
         private void btnHelp_Click(object sender, EventArgs e)
@@ -1001,6 +996,16 @@ namespace HaCreator.GUI
         }
 
         private void labelX2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lifeListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lifePictureBox_Click(object sender, EventArgs e)
         {
 
         }

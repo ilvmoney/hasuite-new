@@ -418,6 +418,9 @@
     <EmbeddedResource Include="GUI\UserSettingsForm.resx">
       <DependentUpon>UserSettingsForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="KoolkControls\KoolkLVItem.resx">
+      <DependentUpon>KoolkLVItem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MapEditor\MultiBoardControl.resx">
       <DependentUpon>MultiBoardControl.cs</DependentUpon>
       <SubType>Designer</SubType>

@@ -33,12 +33,13 @@
             this.styleManager = new DevComponents.DotNetBar.StyleManager(this.components);
             this.saveButton = new DevComponents.DotNetBar.ButtonX();
             this.label1 = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // styleManager
             // 
             this.styleManager.ManagerColorTint = System.Drawing.SystemColors.HotTrack;
-            this.styleManager.ManagerStyle = DevComponents.DotNetBar.eStyle.Office2007Blue;
+            this.styleManager.ManagerStyle = DevComponents.DotNetBar.eStyle.Office2007VistaGlass;
             // 
             // saveButton
             // 
@@ -66,12 +67,23 @@
             this.label1.Text = "This will save Map.wz to: \'(YourChosenMapleFolder)\\EdittedWZ\'\r\nMake a copy of you" +
                 "r current Map.wz";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Enabled = false;
+            this.progressBar1.Location = new System.Drawing.Point(12, 109);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(231, 19);
+            this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.progressBar1.TabIndex = 5;
             // 
             // Save
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(255, 114);
+            this.ClientSize = new System.Drawing.Size(255, 132);
+            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.saveButton);
             this.DoubleBuffered = true;
@@ -80,7 +92,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Save";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Save";
             this.Load += new System.EventHandler(this.Save_Load);
             this.ResumeLayout(false);
@@ -92,5 +104,6 @@
         private DevComponents.DotNetBar.StyleManager styleManager;
         private DevComponents.DotNetBar.ButtonX saveButton;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }

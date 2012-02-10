@@ -472,6 +472,7 @@ namespace HaCreator
                         info.fieldType = FieldType.FIELDTYPE_CRIMSONWOODPQ;
                         break;
                 }
+            info.SaveMapInfo();
             Close();
         }
 
@@ -513,6 +514,11 @@ namespace HaCreator
         private void allowedItemsAdd_Click(object sender, EventArgs e)
         {
             allowedItems.Items.Add(Microsoft.VisualBasic.Interaction.InputBox("Insert item ID", "Add Allowed Item", "", -1, -1));
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

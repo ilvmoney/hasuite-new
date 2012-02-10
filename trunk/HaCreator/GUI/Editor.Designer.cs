@@ -36,12 +36,16 @@
             this.dockSite1 = new DevComponents.DotNetBar.DockSite();
             this.dockSite2 = new DevComponents.DotNetBar.DockSite();
             this.bar1 = new DevComponents.DotNetBar.Bar();
-            this.panelDockContainer1 = new DevComponents.DotNetBar.PanelDockContainer();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.tileBrowse = new System.Windows.Forms.Button();
-            this.tileSetList = new System.Windows.Forms.ListBox();
-            this.tileImagesContainer = new HaCreator.KoolkLVContainer();
+            this.panelDockContainer4 = new DevComponents.DotNetBar.PanelDockContainer();
+            this.splitContainer8 = new System.Windows.Forms.SplitContainer();
+            this.splitContainer9 = new System.Windows.Forms.SplitContainer();
+            this.labelX1 = new DevComponents.DotNetBar.LabelX();
+            this.lifeSearchBox = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.mobRButton = new DevComponents.DotNetBar.Controls.CheckBoxX();
+            this.npcRButton = new DevComponents.DotNetBar.Controls.CheckBoxX();
+            this.reactorRButton = new DevComponents.DotNetBar.Controls.CheckBoxX();
+            this.lifeListBox = new System.Windows.Forms.ListBox();
+            this.lifePictureBox = new System.Windows.Forms.PictureBox();
             this.panelDockContainer2 = new DevComponents.DotNetBar.PanelDockContainer();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.splitContainer4 = new System.Windows.Forms.SplitContainer();
@@ -57,20 +61,16 @@
             this.bgBack = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.aniBg = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.bgImageContainer = new HaCreator.KoolkLVContainer();
-            this.panelDockContainer4 = new DevComponents.DotNetBar.PanelDockContainer();
-            this.splitContainer8 = new System.Windows.Forms.SplitContainer();
-            this.splitContainer9 = new System.Windows.Forms.SplitContainer();
-            this.labelX1 = new DevComponents.DotNetBar.LabelX();
-            this.lifeSearchBox = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.mobRButton = new DevComponents.DotNetBar.Controls.CheckBoxX();
-            this.npcRButton = new DevComponents.DotNetBar.Controls.CheckBoxX();
-            this.reactorRButton = new DevComponents.DotNetBar.Controls.CheckBoxX();
-            this.lifeListBox = new System.Windows.Forms.ListBox();
-            this.lifePictureBox = new System.Windows.Forms.PictureBox();
             this.panelDockContainer5 = new DevComponents.DotNetBar.PanelDockContainer();
             this.portalImageContainer = new HaCreator.KoolkLVContainer();
             this.panelDockContainer6 = new DevComponents.DotNetBar.PanelDockContainer();
             this.miscItemsContainer = new HaCreator.KoolkLVContainer();
+            this.panelDockContainer1 = new DevComponents.DotNetBar.PanelDockContainer();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.tileBrowse = new System.Windows.Forms.Button();
+            this.tileSetList = new System.Windows.Forms.ListBox();
+            this.tileImagesContainer = new HaCreator.KoolkLVContainer();
             this.tileDockBox = new DevComponents.DotNetBar.DockContainerItem();
             this.objsDockBox = new DevComponents.DotNetBar.DockContainerItem();
             this.bgDockBox = new DevComponents.DotNetBar.DockContainerItem();
@@ -147,15 +147,16 @@
             this.dockSite2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bar1)).BeginInit();
             this.bar1.SuspendLayout();
-            this.panelDockContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
-            this.splitContainer2.Panel1.SuspendLayout();
-            this.splitContainer2.Panel2.SuspendLayout();
-            this.splitContainer2.SuspendLayout();
+            this.panelDockContainer4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer8)).BeginInit();
+            this.splitContainer8.Panel1.SuspendLayout();
+            this.splitContainer8.Panel2.SuspendLayout();
+            this.splitContainer8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer9)).BeginInit();
+            this.splitContainer9.Panel1.SuspendLayout();
+            this.splitContainer9.Panel2.SuspendLayout();
+            this.splitContainer9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lifePictureBox)).BeginInit();
             this.panelDockContainer2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
             this.splitContainer3.Panel1.SuspendLayout();
@@ -178,18 +179,17 @@
             this.splitContainer7.Panel1.SuspendLayout();
             this.splitContainer7.Panel2.SuspendLayout();
             this.splitContainer7.SuspendLayout();
-            this.panelDockContainer4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer8)).BeginInit();
-            this.splitContainer8.Panel1.SuspendLayout();
-            this.splitContainer8.Panel2.SuspendLayout();
-            this.splitContainer8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer9)).BeginInit();
-            this.splitContainer9.Panel1.SuspendLayout();
-            this.splitContainer9.Panel2.SuspendLayout();
-            this.splitContainer9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lifePictureBox)).BeginInit();
             this.panelDockContainer5.SuspendLayout();
             this.panelDockContainer6.SuspendLayout();
+            this.panelDockContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
+            this.splitContainer2.Panel1.SuspendLayout();
+            this.splitContainer2.Panel2.SuspendLayout();
+            this.splitContainer2.SuspendLayout();
             this.ribbonControl.SuspendLayout();
             this.ribbonPanel2.SuspendLayout();
             this.ribbonPanel1.SuspendLayout();
@@ -198,7 +198,7 @@
             // 
             // styleManager
             // 
-            this.styleManager.ManagerColorTint = System.Drawing.SystemColors.Highlight;
+            this.styleManager.ManagerColorTint = System.Drawing.SystemColors.HotTrack;
             this.styleManager.ManagerStyle = DevComponents.DotNetBar.eStyle.Office2007VistaGlass;
             // 
             // dotNetBarManager
@@ -269,9 +269,9 @@
             this.bar1.Controls.Add(this.panelDockContainer1);
             this.bar1.Controls.Add(this.panelDockContainer2);
             this.bar1.Controls.Add(this.panelDockContainer3);
-            this.bar1.Controls.Add(this.panelDockContainer4);
             this.bar1.Controls.Add(this.panelDockContainer5);
             this.bar1.Controls.Add(this.panelDockContainer6);
+            this.bar1.Controls.Add(this.panelDockContainer4);
             this.bar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bar1.GrabHandleStyle = DevComponents.DotNetBar.eGrabHandleStyle.Caption;
             this.bar1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
@@ -292,86 +292,160 @@
             this.bar1.TabStop = false;
             this.bar1.Text = "Tiles";
             // 
-            // panelDockContainer1
+            // panelDockContainer4
             // 
-            this.panelDockContainer1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.panelDockContainer1.Controls.Add(this.splitContainer1);
-            this.panelDockContainer1.Location = new System.Drawing.Point(3, 23);
-            this.panelDockContainer1.Name = "panelDockContainer1";
-            this.panelDockContainer1.Size = new System.Drawing.Size(267, 534);
-            this.panelDockContainer1.Style.Alignment = System.Drawing.StringAlignment.Center;
-            this.panelDockContainer1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
-            this.panelDockContainer1.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
-            this.panelDockContainer1.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.ItemText;
-            this.panelDockContainer1.Style.GradientAngle = 90;
-            this.panelDockContainer1.TabIndex = 0;
+            this.panelDockContainer4.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelDockContainer4.Controls.Add(this.splitContainer8);
+            this.panelDockContainer4.Location = new System.Drawing.Point(3, 23);
+            this.panelDockContainer4.Name = "panelDockContainer4";
+            this.panelDockContainer4.Size = new System.Drawing.Size(267, 534);
+            this.panelDockContainer4.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.panelDockContainer4.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
+            this.panelDockContainer4.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
+            this.panelDockContainer4.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.ItemText;
+            this.panelDockContainer4.Style.GradientAngle = 90;
+            this.panelDockContainer4.TabIndex = 4;
             // 
-            // splitContainer1
+            // splitContainer8
             // 
-            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Name = "splitContainer1";
-            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.splitContainer8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer8.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer8.Name = "splitContainer8";
+            this.splitContainer8.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
-            // splitContainer1.Panel1
+            // splitContainer8.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.splitContainer2);
+            this.splitContainer8.Panel1.Controls.Add(this.splitContainer9);
             // 
-            // splitContainer1.Panel2
+            // splitContainer8.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.tileImagesContainer);
-            this.splitContainer1.Size = new System.Drawing.Size(267, 534);
-            this.splitContainer1.SplitterDistance = 150;
-            this.splitContainer1.TabIndex = 2;
+            this.splitContainer8.Panel2.AutoScroll = true;
+            this.splitContainer8.Panel2.Controls.Add(this.lifePictureBox);
+            this.splitContainer8.Size = new System.Drawing.Size(267, 534);
+            this.splitContainer8.SplitterDistance = 181;
+            this.splitContainer8.TabIndex = 1;
             // 
-            // splitContainer2
+            // splitContainer9
             // 
-            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer2.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer2.Name = "splitContainer2";
-            this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.splitContainer9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer9.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer9.Name = "splitContainer9";
+            this.splitContainer9.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
-            // splitContainer2.Panel1
+            // splitContainer9.Panel1
             // 
-            this.splitContainer2.Panel1.Controls.Add(this.tileBrowse);
+            this.splitContainer9.Panel1.Controls.Add(this.labelX1);
+            this.splitContainer9.Panel1.Controls.Add(this.lifeSearchBox);
+            this.splitContainer9.Panel1.Controls.Add(this.mobRButton);
+            this.splitContainer9.Panel1.Controls.Add(this.npcRButton);
+            this.splitContainer9.Panel1.Controls.Add(this.reactorRButton);
             // 
-            // splitContainer2.Panel2
+            // splitContainer9.Panel2
             // 
-            this.splitContainer2.Panel2.Controls.Add(this.tileSetList);
-            this.splitContainer2.Size = new System.Drawing.Size(267, 150);
-            this.splitContainer2.SplitterDistance = 35;
-            this.splitContainer2.TabIndex = 1;
+            this.splitContainer9.Panel2.Controls.Add(this.lifeListBox);
+            this.splitContainer9.Size = new System.Drawing.Size(267, 181);
+            this.splitContainer9.SplitterDistance = 65;
+            this.splitContainer9.TabIndex = 3;
             // 
-            // tileBrowse
+            // labelX1
             // 
-            this.tileBrowse.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tileBrowse.Location = new System.Drawing.Point(0, 0);
-            this.tileBrowse.Name = "tileBrowse";
-            this.tileBrowse.Size = new System.Drawing.Size(267, 35);
-            this.tileBrowse.TabIndex = 0;
-            this.tileBrowse.Text = "Browse...";
-            this.tileBrowse.UseVisualStyleBackColor = true;
-            this.tileBrowse.Click += new System.EventHandler(this.tileBrowse_Click);
+            this.labelX1.AutoSize = true;
             // 
-            // tileSetList
             // 
-            this.tileSetList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tileSetList.FormattingEnabled = true;
-            this.tileSetList.Location = new System.Drawing.Point(0, 0);
-            this.tileSetList.Name = "tileSetList";
-            this.tileSetList.Size = new System.Drawing.Size(267, 111);
-            this.tileSetList.TabIndex = 0;
-            this.tileSetList.SelectedIndexChanged += new System.EventHandler(this.tileSetList_SelectedIndexChanged);
             // 
-            // tileImagesContainer
+            this.labelX1.BackgroundStyle.Class = "";
+            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX1.Location = new System.Drawing.Point(3, 30);
+            this.labelX1.Name = "labelX1";
+            this.labelX1.Size = new System.Drawing.Size(37, 15);
+            this.labelX1.TabIndex = 4;
+            this.labelX1.Text = "Search";
             // 
-            this.tileImagesContainer.AutoScroll = true;
-            this.tileImagesContainer.BackColor = System.Drawing.Color.White;
-            this.tileImagesContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tileImagesContainer.Location = new System.Drawing.Point(0, 0);
-            this.tileImagesContainer.Name = "tileImagesContainer";
-            this.tileImagesContainer.Size = new System.Drawing.Size(267, 380);
-            this.tileImagesContainer.TabIndex = 0;
+            // lifeSearchBox
+            // 
+            // 
+            // 
+            // 
+            this.lifeSearchBox.Border.Class = "TextBoxBorder";
+            this.lifeSearchBox.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.lifeSearchBox.Location = new System.Drawing.Point(44, 28);
+            this.lifeSearchBox.Name = "lifeSearchBox";
+            this.lifeSearchBox.Size = new System.Drawing.Size(146, 20);
+            this.lifeSearchBox.TabIndex = 3;
+            this.lifeSearchBox.TextChanged += new System.EventHandler(this.lifeModeChanged);
+            // 
+            // mobRButton
+            // 
+            // 
+            // 
+            // 
+            this.mobRButton.BackgroundStyle.Class = "";
+            this.mobRButton.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.mobRButton.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton;
+            this.mobRButton.Checked = true;
+            this.mobRButton.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.mobRButton.CheckValue = "Y";
+            this.mobRButton.Location = new System.Drawing.Point(3, 3);
+            this.mobRButton.Name = "mobRButton";
+            this.mobRButton.Size = new System.Drawing.Size(42, 19);
+            this.mobRButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.mobRButton.TabIndex = 1;
+            this.mobRButton.Text = "Mob";
+            this.mobRButton.CheckedChanged += new System.EventHandler(this.lifeModeChanged);
+            // 
+            // npcRButton
+            // 
+            // 
+            // 
+            // 
+            this.npcRButton.BackgroundStyle.Class = "";
+            this.npcRButton.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.npcRButton.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton;
+            this.npcRButton.Location = new System.Drawing.Point(51, 3);
+            this.npcRButton.Name = "npcRButton";
+            this.npcRButton.Size = new System.Drawing.Size(41, 19);
+            this.npcRButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.npcRButton.TabIndex = 2;
+            this.npcRButton.Text = "NPC";
+            this.npcRButton.CheckedChanged += new System.EventHandler(this.lifeModeChanged);
+            // 
+            // reactorRButton
+            // 
+            // 
+            // 
+            // 
+            this.reactorRButton.BackgroundStyle.Class = "";
+            this.reactorRButton.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.reactorRButton.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton;
+            this.reactorRButton.Location = new System.Drawing.Point(98, 3);
+            this.reactorRButton.Name = "reactorRButton";
+            this.reactorRButton.Size = new System.Drawing.Size(67, 19);
+            this.reactorRButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.reactorRButton.TabIndex = 0;
+            this.reactorRButton.Text = "Reactor";
+            this.reactorRButton.CheckedChanged += new System.EventHandler(this.lifeModeChanged);
+            // 
+            // lifeListBox
+            // 
+            this.lifeListBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lifeListBox.FormattingEnabled = true;
+            this.lifeListBox.Location = new System.Drawing.Point(0, 0);
+            this.lifeListBox.Name = "lifeListBox";
+            this.lifeListBox.Size = new System.Drawing.Size(267, 112);
+            this.lifeListBox.TabIndex = 0;
+            this.lifeListBox.SelectedIndexChanged += new System.EventHandler(this.lifeListBox_SelectedIndexChanged);
+            this.lifeListBox.SelectedValueChanged += new System.EventHandler(this.lifeListBox_SelectedValueChanged);
+            // 
+            // lifePictureBox
+            // 
+            this.lifePictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lifePictureBox.Location = new System.Drawing.Point(0, 0);
+            this.lifePictureBox.Name = "lifePictureBox";
+            this.lifePictureBox.Size = new System.Drawing.Size(267, 349);
+            this.lifePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.lifePictureBox.TabIndex = 0;
+            this.lifePictureBox.TabStop = false;
+            this.lifePictureBox.Click += new System.EventHandler(this.lifePictureBox_Click);
             // 
             // panelDockContainer2
             // 
@@ -588,159 +662,6 @@
             this.bgImageContainer.Size = new System.Drawing.Size(267, 399);
             this.bgImageContainer.TabIndex = 0;
             // 
-            // panelDockContainer4
-            // 
-            this.panelDockContainer4.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.panelDockContainer4.Controls.Add(this.splitContainer8);
-            this.panelDockContainer4.Location = new System.Drawing.Point(3, 23);
-            this.panelDockContainer4.Name = "panelDockContainer4";
-            this.panelDockContainer4.Size = new System.Drawing.Size(267, 534);
-            this.panelDockContainer4.Style.Alignment = System.Drawing.StringAlignment.Center;
-            this.panelDockContainer4.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
-            this.panelDockContainer4.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
-            this.panelDockContainer4.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.ItemText;
-            this.panelDockContainer4.Style.GradientAngle = 90;
-            this.panelDockContainer4.TabIndex = 4;
-            // 
-            // splitContainer8
-            // 
-            this.splitContainer8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer8.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer8.Name = "splitContainer8";
-            this.splitContainer8.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer8.Panel1
-            // 
-            this.splitContainer8.Panel1.Controls.Add(this.splitContainer9);
-            // 
-            // splitContainer8.Panel2
-            // 
-            this.splitContainer8.Panel2.AutoScroll = true;
-            this.splitContainer8.Panel2.Controls.Add(this.lifePictureBox);
-            this.splitContainer8.Size = new System.Drawing.Size(267, 534);
-            this.splitContainer8.SplitterDistance = 181;
-            this.splitContainer8.TabIndex = 1;
-            // 
-            // splitContainer9
-            // 
-            this.splitContainer9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer9.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer9.Name = "splitContainer9";
-            this.splitContainer9.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer9.Panel1
-            // 
-            this.splitContainer9.Panel1.Controls.Add(this.labelX1);
-            this.splitContainer9.Panel1.Controls.Add(this.lifeSearchBox);
-            this.splitContainer9.Panel1.Controls.Add(this.mobRButton);
-            this.splitContainer9.Panel1.Controls.Add(this.npcRButton);
-            this.splitContainer9.Panel1.Controls.Add(this.reactorRButton);
-            // 
-            // splitContainer9.Panel2
-            // 
-            this.splitContainer9.Panel2.Controls.Add(this.lifeListBox);
-            this.splitContainer9.Size = new System.Drawing.Size(267, 181);
-            this.splitContainer9.SplitterDistance = 65;
-            this.splitContainer9.TabIndex = 3;
-            // 
-            // labelX1
-            // 
-            this.labelX1.AutoSize = true;
-            // 
-            // 
-            // 
-            this.labelX1.BackgroundStyle.Class = "";
-            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX1.Location = new System.Drawing.Point(3, 30);
-            this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(37, 15);
-            this.labelX1.TabIndex = 4;
-            this.labelX1.Text = "Search";
-            // 
-            // lifeSearchBox
-            // 
-            // 
-            // 
-            // 
-            this.lifeSearchBox.Border.Class = "TextBoxBorder";
-            this.lifeSearchBox.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lifeSearchBox.Location = new System.Drawing.Point(44, 28);
-            this.lifeSearchBox.Name = "lifeSearchBox";
-            this.lifeSearchBox.Size = new System.Drawing.Size(146, 20);
-            this.lifeSearchBox.TabIndex = 3;
-            this.lifeSearchBox.TextChanged += new System.EventHandler(this.lifeModeChanged);
-            // 
-            // mobRButton
-            // 
-            // 
-            // 
-            // 
-            this.mobRButton.BackgroundStyle.Class = "";
-            this.mobRButton.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.mobRButton.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton;
-            this.mobRButton.Checked = true;
-            this.mobRButton.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.mobRButton.CheckValue = "Y";
-            this.mobRButton.Location = new System.Drawing.Point(3, 3);
-            this.mobRButton.Name = "mobRButton";
-            this.mobRButton.Size = new System.Drawing.Size(42, 19);
-            this.mobRButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.mobRButton.TabIndex = 1;
-            this.mobRButton.Text = "Mob";
-            this.mobRButton.CheckedChanged += new System.EventHandler(this.lifeModeChanged);
-            // 
-            // npcRButton
-            // 
-            // 
-            // 
-            // 
-            this.npcRButton.BackgroundStyle.Class = "";
-            this.npcRButton.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.npcRButton.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton;
-            this.npcRButton.Location = new System.Drawing.Point(51, 3);
-            this.npcRButton.Name = "npcRButton";
-            this.npcRButton.Size = new System.Drawing.Size(41, 19);
-            this.npcRButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.npcRButton.TabIndex = 2;
-            this.npcRButton.Text = "NPC";
-            this.npcRButton.CheckedChanged += new System.EventHandler(this.lifeModeChanged);
-            // 
-            // reactorRButton
-            // 
-            // 
-            // 
-            // 
-            this.reactorRButton.BackgroundStyle.Class = "";
-            this.reactorRButton.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.reactorRButton.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton;
-            this.reactorRButton.Location = new System.Drawing.Point(98, 3);
-            this.reactorRButton.Name = "reactorRButton";
-            this.reactorRButton.Size = new System.Drawing.Size(67, 19);
-            this.reactorRButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.reactorRButton.TabIndex = 0;
-            this.reactorRButton.Text = "Reactor";
-            this.reactorRButton.CheckedChanged += new System.EventHandler(this.lifeModeChanged);
-            // 
-            // lifeListBox
-            // 
-            this.lifeListBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lifeListBox.FormattingEnabled = true;
-            this.lifeListBox.Location = new System.Drawing.Point(0, 0);
-            this.lifeListBox.Name = "lifeListBox";
-            this.lifeListBox.Size = new System.Drawing.Size(267, 112);
-            this.lifeListBox.TabIndex = 0;
-            this.lifeListBox.SelectedValueChanged += new System.EventHandler(this.lifeListBox_SelectedValueChanged);
-            // 
-            // lifePictureBox
-            // 
-            this.lifePictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lifePictureBox.Location = new System.Drawing.Point(0, 0);
-            this.lifePictureBox.Name = "lifePictureBox";
-            this.lifePictureBox.Size = new System.Drawing.Size(267, 349);
-            this.lifePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.lifePictureBox.TabIndex = 0;
-            this.lifePictureBox.TabStop = false;
-            // 
             // panelDockContainer5
             // 
             this.panelDockContainer5.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -787,6 +708,87 @@
             this.miscItemsContainer.Name = "miscItemsContainer";
             this.miscItemsContainer.Size = new System.Drawing.Size(267, 534);
             this.miscItemsContainer.TabIndex = 1;
+            // 
+            // panelDockContainer1
+            // 
+            this.panelDockContainer1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelDockContainer1.Controls.Add(this.splitContainer1);
+            this.panelDockContainer1.Location = new System.Drawing.Point(3, 23);
+            this.panelDockContainer1.Name = "panelDockContainer1";
+            this.panelDockContainer1.Size = new System.Drawing.Size(267, 534);
+            this.panelDockContainer1.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.panelDockContainer1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
+            this.panelDockContainer1.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
+            this.panelDockContainer1.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.ItemText;
+            this.panelDockContainer1.Style.GradientAngle = 90;
+            this.panelDockContainer1.TabIndex = 0;
+            // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Name = "splitContainer1";
+            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.splitContainer2);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.tileImagesContainer);
+            this.splitContainer1.Size = new System.Drawing.Size(267, 534);
+            this.splitContainer1.SplitterDistance = 150;
+            this.splitContainer1.TabIndex = 2;
+            // 
+            // splitContainer2
+            // 
+            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer2.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer2.Name = "splitContainer2";
+            this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer2.Panel1
+            // 
+            this.splitContainer2.Panel1.Controls.Add(this.tileBrowse);
+            // 
+            // splitContainer2.Panel2
+            // 
+            this.splitContainer2.Panel2.Controls.Add(this.tileSetList);
+            this.splitContainer2.Size = new System.Drawing.Size(267, 150);
+            this.splitContainer2.SplitterDistance = 35;
+            this.splitContainer2.TabIndex = 1;
+            // 
+            // tileBrowse
+            // 
+            this.tileBrowse.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tileBrowse.Location = new System.Drawing.Point(0, 0);
+            this.tileBrowse.Name = "tileBrowse";
+            this.tileBrowse.Size = new System.Drawing.Size(267, 35);
+            this.tileBrowse.TabIndex = 0;
+            this.tileBrowse.Text = "Browse...";
+            this.tileBrowse.UseVisualStyleBackColor = true;
+            this.tileBrowse.Click += new System.EventHandler(this.tileBrowse_Click);
+            // 
+            // tileSetList
+            // 
+            this.tileSetList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tileSetList.FormattingEnabled = true;
+            this.tileSetList.Location = new System.Drawing.Point(0, 0);
+            this.tileSetList.Name = "tileSetList";
+            this.tileSetList.Size = new System.Drawing.Size(267, 111);
+            this.tileSetList.TabIndex = 0;
+            this.tileSetList.SelectedIndexChanged += new System.EventHandler(this.tileSetList_SelectedIndexChanged);
+            // 
+            // tileImagesContainer
+            // 
+            this.tileImagesContainer.AutoScroll = true;
+            this.tileImagesContainer.BackColor = System.Drawing.Color.White;
+            this.tileImagesContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tileImagesContainer.Location = new System.Drawing.Point(0, 0);
+            this.tileImagesContainer.Name = "tileImagesContainer";
+            this.tileImagesContainer.Size = new System.Drawing.Size(267, 380);
+            this.tileImagesContainer.TabIndex = 0;
             // 
             // tileDockBox
             // 
@@ -1300,10 +1302,10 @@
             this.ribbonPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonPanel1.Controls.Add(this.ribbonBar3);
             this.ribbonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ribbonPanel1.Location = new System.Drawing.Point(0, 56);
+            this.ribbonPanel1.Location = new System.Drawing.Point(0, 0);
             this.ribbonPanel1.Name = "ribbonPanel1";
             this.ribbonPanel1.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.ribbonPanel1.Size = new System.Drawing.Size(605, 96);
+            this.ribbonPanel1.Size = new System.Drawing.Size(605, 152);
             // 
             // 
             // 
@@ -1341,7 +1343,7 @@
             this.itemContainer6});
             this.ribbonBar3.Location = new System.Drawing.Point(3, 0);
             this.ribbonBar3.Name = "ribbonBar3";
-            this.ribbonBar3.Size = new System.Drawing.Size(300, 93);
+            this.ribbonBar3.Size = new System.Drawing.Size(300, 149);
             this.ribbonBar3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar3.TabIndex = 0;
             this.ribbonBar3.Text = "Options";
@@ -1660,15 +1662,18 @@
             this.dockSite2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bar1)).EndInit();
             this.bar1.ResumeLayout(false);
-            this.panelDockContainer1.ResumeLayout(false);
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
-            this.splitContainer2.Panel1.ResumeLayout(false);
-            this.splitContainer2.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
-            this.splitContainer2.ResumeLayout(false);
+            this.panelDockContainer4.ResumeLayout(false);
+            this.splitContainer8.Panel1.ResumeLayout(false);
+            this.splitContainer8.Panel2.ResumeLayout(false);
+            this.splitContainer8.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer8)).EndInit();
+            this.splitContainer8.ResumeLayout(false);
+            this.splitContainer9.Panel1.ResumeLayout(false);
+            this.splitContainer9.Panel1.PerformLayout();
+            this.splitContainer9.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer9)).EndInit();
+            this.splitContainer9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.lifePictureBox)).EndInit();
             this.panelDockContainer2.ResumeLayout(false);
             this.splitContainer3.Panel1.ResumeLayout(false);
             this.splitContainer3.Panel2.ResumeLayout(false);
@@ -1691,20 +1696,17 @@
             this.splitContainer7.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer7)).EndInit();
             this.splitContainer7.ResumeLayout(false);
-            this.panelDockContainer4.ResumeLayout(false);
-            this.splitContainer8.Panel1.ResumeLayout(false);
-            this.splitContainer8.Panel2.ResumeLayout(false);
-            this.splitContainer8.Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer8)).EndInit();
-            this.splitContainer8.ResumeLayout(false);
-            this.splitContainer9.Panel1.ResumeLayout(false);
-            this.splitContainer9.Panel1.PerformLayout();
-            this.splitContainer9.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer9)).EndInit();
-            this.splitContainer9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.lifePictureBox)).EndInit();
             this.panelDockContainer5.ResumeLayout(false);
             this.panelDockContainer6.ResumeLayout(false);
+            this.panelDockContainer1.ResumeLayout(false);
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
+            this.splitContainer2.Panel1.ResumeLayout(false);
+            this.splitContainer2.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
+            this.splitContainer2.ResumeLayout(false);
             this.ribbonControl.ResumeLayout(false);
             this.ribbonControl.PerformLayout();
             this.ribbonPanel2.ResumeLayout(false);

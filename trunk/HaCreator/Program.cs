@@ -11,7 +11,7 @@ namespace HaCreator
 {
     static class Program
     {
-        public static string version = "2.1.3";
+        public static string version = "2.1.4";
         public static WzFileManager WzManager;
         public static WzInformationManager InfoManager;
         public static WzSettingsManager SettingsManager;
