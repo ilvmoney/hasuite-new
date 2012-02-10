@@ -4,36 +4,49 @@
         <name>CommonForms</name>
     </assembly>
     <members>
-        <member name="T:CommonForms.ExceptionForm">
+        <member name="T:CommonForms.Responsiveness.ProgressForm">
             <summary>
-            A form for displaying details of an unhandled exception to the user.
+            A dialogue to show the progress of a long-running process.
             </summary>
         </member>
-        <member name="M:CommonForms.ExceptionForm.#ctor(System.Exception)">
-            <summary>
-            Constructor.
-            </summary>
-            <param name="ex">
-            The exception to display information about.
-            </param>
-        </member>
-        <member name="F:CommonForms.ExceptionForm.components">
+        <member name="F:CommonForms.Responsiveness.ProgressForm.components">
             <summary>
             Designer variable used to keep track of non-visual components.
             </summary>
         </member>
-        <member name="M:CommonForms.ExceptionForm.Dispose(System.Boolean)">
+        <member name="M:CommonForms.Responsiveness.ProgressForm.Dispose(System.Boolean)">
             <summary>
             Disposes resources used by the form.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
-        <member name="M:CommonForms.ExceptionForm.InitializeComponent">
+        <member name="M:CommonForms.Responsiveness.ProgressForm.InitializeComponent">
             <summary>
             This method is required for Windows Forms designer support.
             Do not change the method contents inside the source code editor. The Forms designer might
             not be able to load this method if it was changed manually.
             </summary>
+        </member>
+        <member name="M:CommonForms.Responsiveness.ProgressForm.#ctor(System.String)">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:CommonForms.Responsiveness.ProgressForm.UpdateBars(CommonForms.Responsiveness.ProgressCounterDictionary)">
+            <summary>
+            Updates the progress bars on the form with the supplied counters.
+            </summary>
+            <param name="counters">
+            The counters to represent on the form with progress bars
+            </param>
+        </member>
+        <member name="M:CommonForms.Responsiveness.ProgressForm.AddControl(CommonForms.Responsiveness.ProgressCounter)">
+            <summary>
+            Adds a ProgressControl to the form
+            </summary>
+            <param name="counter">
+            The progress counter to represent on the control.
+            </param>
         </member>
         <member name="T:CommonForms.Responsiveness.ProgressCounterDictionary">
             <summary>
@@ -76,6 +89,266 @@
             collection.
             </summary>
             <param name="counters">The counters to add to the collection</param>
+        </member>
+        <member name="T:CommonForms.Responsiveness.ResponsiveForm">
+            <summary>
+            Base class for a form which remains responsive during long-running
+            operations and provides regular feedback to the user about the progress
+            of the operation.
+            </summary>
+        </member>
+        <member name="F:CommonForms.Responsiveness.ResponsiveForm.components">
+            <summary>
+            Designer variable used to keep track of non-visual components.
+            </summary>
+        </member>
+        <member name="M:CommonForms.Responsiveness.ResponsiveForm.Dispose(System.Boolean)">
+            <summary>
+            Disposes resources used by the form.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CommonForms.Responsiveness.ResponsiveForm.InitializeComponent">
+            <summary>
+            This method is required for Windows Forms designer support.
+            Do not change the method contents inside the source code editor. The Forms designer might
+            not be able to load this method if it was changed manually.
+            </summary>
+        </member>
+        <member name="M:CommonForms.Responsiveness.ResponsiveForm.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:CommonForms.Responsiveness.ResponsiveForm.StartBackgroundProcess(CommonForms.Responsiveness.LongRunningProcessObject,System.Threading.ThreadStart,System.String)">
+            <summary>
+            Disables form controls and starts the supplied process on a 
+            background thread. The supplied process needs to invoke the
+            StopTheClock method on completion.
+            </summary>
+            <param name="process">
+            The <see cref="T:CommonForms.Responsiveness.LongRunningProcessObject"/> class which declares the method
+            to be started.
+            </param>
+            <param name="method">
+            The name of the method to start on a background thread.
+            </param>
+            <param name="progressFormTitle">
+            Text to display in the title bar of the progress form.
+            </param>
+        </member>
+        <member name="M:CommonForms.Responsiveness.ResponsiveForm.ProvideFeedback">
+            <summary>
+            Updates progress bars to provide the user with feedback on the 
+            progress of a long-running process.
+            </summary>
+        </member>
+        <member name="M:CommonForms.Responsiveness.ResponsiveForm.StopTheClock">
+            <summary>
+            When overridden in a derived class, stops the timer, calls the 
+            UpdateUI method, enables any disabled controls and displays the
+            details of any exception which occurred during the long-running
+            process.
+            Run on the UI thread.
+            </summary>
+            <remarks>
+            Override this method to perform any additional tasks which are 
+            needed upon completion of a long-running process and then call this
+            base method.
+            </remarks>
+        </member>
+        <member name="M:CommonForms.Responsiveness.ResponsiveForm.HandleException(System.Exception)">
+            <summary>
+            Shows a form displaying the details of the supplied exception.
+            </summary>
+            <param name="ex">The exception to display the details of.</param>
+        </member>
+        <member name="M:CommonForms.Responsiveness.ResponsiveForm.BackgroundProcessTimerTick(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for the tick event of the BackgroundProcessTimer.
+            Updates the user interface to provide the user with feedback on the
+            progress of a long-running process.
+            </summary>
+            <param name="sender">The control which raised the tick event</param>
+            <param name="e">More information about the event</param>
+        </member>
+        <member name="M:CommonForms.Responsiveness.ResponsiveForm.EnableControls(System.Windows.Forms.Control)">
+            <summary>
+            Enables all the controls on the supplied control, and their child
+            controls, provided they are of a type defined in the TypesToDisable
+            property
+            </summary>
+            <param name="parentControl">
+            The parent control or form which contains the controls to enable.
+            </param>
+        </member>
+        <member name="M:CommonForms.Responsiveness.ResponsiveForm.DisableControls(System.Windows.Forms.Control)">
+            <summary>
+            Disables all the controls on the supplied control, and their child
+            controls, provided they are of a type defined in the TypesToDisable
+            property
+            </summary>
+            <param name="parentControl">
+            The parent control or form which contains the controls to disable.
+            </param>
+        </member>
+        <member name="P:CommonForms.Responsiveness.ResponsiveForm.TypesToDisable">
+            <summary>
+            Gets a collection of types of control to disable whilst a background
+            thread is running.
+            </summary>
+            <remarks>
+            Override this property in a derived class to change the list of 
+            types to be disabled, for example:
+            <code>
+            protected static override Collection&lt;Type&gt; TypesToDisable
+            {
+            	get
+            	{
+            		Collection&lt;Type&gt; types = base.TypesToDisable;
+            		types.Add( typeof( CheckBox ) );
+            		types.Remove( typeof( PropertyGrid ) );
+            		return types;
+            	}
+            }
+            </code>
+            </remarks>
+        </member>
+        <member name="T:CommonForms.ExceptionForm">
+            <summary>
+            A form for displaying details of an unhandled exception to the user.
+            </summary>
+        </member>
+        <member name="F:CommonForms.ExceptionForm.components">
+            <summary>
+            Designer variable used to keep track of non-visual components.
+            </summary>
+        </member>
+        <member name="M:CommonForms.ExceptionForm.Dispose(System.Boolean)">
+            <summary>
+            Disposes resources used by the form.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CommonForms.ExceptionForm.InitializeComponent">
+            <summary>
+            This method is required for Windows Forms designer support.
+            Do not change the method contents inside the source code editor. The Forms designer might
+            not be able to load this method if it was changed manually.
+            </summary>
+        </member>
+        <member name="M:CommonForms.ExceptionForm.#ctor(System.Exception)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="ex">
+            The exception to display information about.
+            </param>
+        </member>
+        <member name="T:CommonForms.Responsiveness.ProgressControl">
+            <summary>
+            A windows forms control containing a progress bar and label.
+            </summary>
+        </member>
+        <member name="M:CommonForms.Responsiveness.ProgressControl.#ctor(CommonForms.Responsiveness.ProgressCounter)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="counter">
+            The progress counter which the control represents.
+            </param>
+        </member>
+        <member name="F:CommonForms.Responsiveness.ProgressControl.components">
+            <summary>
+            Designer variable used to keep track of non-visual components.
+            </summary>
+        </member>
+        <member name="M:CommonForms.Responsiveness.ProgressControl.Dispose(System.Boolean)">
+            <summary>
+            Disposes resources used by the control.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CommonForms.Responsiveness.ProgressControl.InitializeComponent">
+            <summary>
+            This method is required for Windows Forms designer support.
+            Do not change the method contents inside the source code editor. The Forms designer might
+            not be able to load this method if it was changed manually.
+            </summary>
+        </member>
+        <member name="T:CommonForms.AboutForm">
+            <summary>
+            Form to display copyright notice and license agreement
+            </summary>
+        </member>
+        <member name="F:CommonForms.AboutForm._verticalPadding">
+            <summary>
+            Space between form edge and top/bottom of outermost controls.
+            </summary>
+        </member>
+        <member name="F:CommonForms.AboutForm._horizontalPadding">
+            <summary>
+            Space between form edge and left/right hand edge of outermost 
+            controls.
+            </summary>
+        </member>
+        <member name="F:CommonForms.AboutForm._verticalSpacing">
+            <summary>
+            Vertical spacing between adjacent controls.
+            </summary>
+        </member>
+        <member name="F:CommonForms.AboutForm.components">
+            <summary>
+            Designer variable used to keep track of non-visual components.
+            </summary>
+        </member>
+        <member name="M:CommonForms.AboutForm.Dispose(System.Boolean)">
+            <summary>
+            Disposes resources used by the form.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CommonForms.AboutForm.InitializeComponent">
+            <summary>
+            This method is required for Windows Forms designer support.
+            Do not change the method contents inside the source code editor. The Forms designer might
+            not be able to load this method if it was changed manually.
+            </summary>
+        </member>
+        <member name="F:CommonForms.AboutForm._verticalPosition">
+            <summary>
+            Vertical position of the next form to be added to the control.
+            </summary>
+        </member>
+        <member name="M:CommonForms.AboutForm.#ctor(CommonForms.AboutFormParameters)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="parameters">
+            An object encapsulating information such as the author's name, 
+            copyright details and location of the license agreement.
+            </param>
+        </member>
+        <member name="M:CommonForms.AboutForm.Show">
+            <summary>
+            Displays the AboutForm for the entry assembly.
+            </summary>
+        </member>
+        <member name="M:CommonForms.AboutForm.AddLabel(System.String)">
+            <summary>
+            Adds a label containing the supplied text to the form.
+            </summary>
+            <param name="text">
+            The text of the label to add.
+            </param>
+        </member>
+        <member name="M:CommonForms.AboutForm.AddControl(System.Windows.Forms.Control)">
+            <summary>
+            Adds the supplied control to the form.
+            </summary>
+            <param name="control">
+            The control to add to the form.
+            </param>
         </member>
         <member name="T:CommonForms.Responsiveness.LongRunningProcessObject">
             <summary>
@@ -213,386 +486,6 @@
         <member name="P:CommonForms.Responsiveness.LongRunningProcessObject.AllProgressCounters">
             <summary>
             Gets the progress counters for this process and all sub processes.
-            </summary>
-        </member>
-        <member name="T:CommonForms.AboutFormParameters">
-            <summary>
-            Parameters for instantiation of a <see cref="T:CommonForms.AboutForm"/>.
-            </summary>
-        </member>
-        <member name="M:CommonForms.AboutFormParameters.#ctor">
-            <summary>
-            Constructor.
-            </summary>
-        </member>
-        <member name="P:CommonForms.AboutFormParameters.FormWidth">
-            <summary>
-            The width of the form in pixels.
-            </summary>
-        </member>
-        <member name="P:CommonForms.AboutFormParameters.ApplicationName">
-            <summary>
-            The name of the application.
-            This will be displayed in the title bar of the About box.
-            </summary>
-        </member>
-        <member name="P:CommonForms.AboutFormParameters.Author">
-            <summary>
-            The name of the author of the application.
-            </summary>
-        </member>
-        <member name="P:CommonForms.AboutFormParameters.CopyrightYear">
-            <summary>
-            The year of the copyright statement (may be a range of years)
-            </summary>
-        </member>
-        <member name="P:CommonForms.AboutFormParameters.ExtraCopyrightStatement">
-            <summary>
-            Any additional information about the license, e.g. a brief 
-            description of the type of license.
-            </summary>
-        </member>
-        <member name="P:CommonForms.AboutFormParameters.CreditableWorks">
-            <summary>
-            A collection of <see cref="P:CommonForms.AboutFormParameters.CreditableWorks"/> included in this
-            application.
-            </summary>
-        </member>
-        <member name="P:CommonForms.AboutFormParameters.LicenseFileName">
-            <summary>
-            The name of the file containing the license under which this
-            application is released.
-            </summary>
-        </member>
-        <member name="T:CommonForms.AboutForm">
-            <summary>
-            Form to display copyright notice and license agreement
-            </summary>
-        </member>
-        <member name="F:CommonForms.AboutForm._verticalPadding">
-            <summary>
-            Space between form edge and top/bottom of outermost controls.
-            </summary>
-        </member>
-        <member name="F:CommonForms.AboutForm._horizontalPadding">
-            <summary>
-            Space between form edge and left/right hand edge of outermost 
-            controls.
-            </summary>
-        </member>
-        <member name="F:CommonForms.AboutForm._verticalSpacing">
-            <summary>
-            Vertical spacing between adjacent controls.
-            </summary>
-        </member>
-        <member name="F:CommonForms.AboutForm._verticalPosition">
-            <summary>
-            Vertical position of the next form to be added to the control.
-            </summary>
-        </member>
-        <member name="M:CommonForms.AboutForm.#ctor(CommonForms.AboutFormParameters)">
-            <summary>
-            Constructor.
-            </summary>
-            <param name="parameters">
-            An object encapsulating information such as the author's name, 
-            copyright details and location of the license agreement.
-            </param>
-        </member>
-        <member name="M:CommonForms.AboutForm.Show">
-            <summary>
-            Displays the AboutForm for the entry assembly.
-            </summary>
-        </member>
-        <member name="M:CommonForms.AboutForm.AddLabel(System.String)">
-            <summary>
-            Adds a label containing the supplied text to the form.
-            </summary>
-            <param name="text">
-            The text of the label to add.
-            </param>
-        </member>
-        <member name="M:CommonForms.AboutForm.AddControl(System.Windows.Forms.Control)">
-            <summary>
-            Adds the supplied control to the form.
-            </summary>
-            <param name="control">
-            The control to add to the form.
-            </param>
-        </member>
-        <member name="F:CommonForms.AboutForm.components">
-            <summary>
-            Designer variable used to keep track of non-visual components.
-            </summary>
-        </member>
-        <member name="M:CommonForms.AboutForm.Dispose(System.Boolean)">
-            <summary>
-            Disposes resources used by the form.
-            </summary>
-            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        </member>
-        <member name="M:CommonForms.AboutForm.InitializeComponent">
-            <summary>
-            This method is required for Windows Forms designer support.
-            Do not change the method contents inside the source code editor. The Forms designer might
-            not be able to load this method if it was changed manually.
-            </summary>
-        </member>
-        <member name="T:CommonForms.CreditableWork">
-            <summary>
-            Contains information about the work of another author which has been
-            incorporated into your project, or of which your project contains a
-            derivative work.
-            Used by the LicenseFormParameters class.
-            </summary>
-        </member>
-        <member name="P:CommonForms.CreditableWork.Author">
-            <summary>
-            The name(s) of the authors of the creditable work.
-            </summary>
-        </member>
-        <member name="P:CommonForms.CreditableWork.WorkName">
-            <summary>
-            The name of the creditable work.
-            </summary>
-        </member>
-        <member name="T:CommonForms.Responsiveness.ResponsiveForm">
-            <summary>
-            Base class for a form which remains responsive during long-running
-            operations and provides regular feedback to the user about the progress
-            of the operation.
-            </summary>
-        </member>
-        <member name="F:CommonForms.Responsiveness.ResponsiveForm.components">
-            <summary>
-            Designer variable used to keep track of non-visual components.
-            </summary>
-        </member>
-        <member name="M:CommonForms.Responsiveness.ResponsiveForm.Dispose(System.Boolean)">
-            <summary>
-            Disposes resources used by the form.
-            </summary>
-            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        </member>
-        <member name="M:CommonForms.Responsiveness.ResponsiveForm.InitializeComponent">
-            <summary>
-            This method is required for Windows Forms designer support.
-            Do not change the method contents inside the source code editor. The Forms designer might
-            not be able to load this method if it was changed manually.
-            </summary>
-        </member>
-        <member name="M:CommonForms.Responsiveness.ResponsiveForm.#ctor">
-            <summary>
-            Constructor.
-            </summary>
-        </member>
-        <member name="M:CommonForms.Responsiveness.ResponsiveForm.StartBackgroundProcess(CommonForms.Responsiveness.LongRunningProcessObject,System.Threading.ThreadStart,System.String)">
-            <summary>
-            Disables form controls and starts the supplied process on a 
-            background thread. The supplied process needs to invoke the
-            StopTheClock method on completion.
-            </summary>
-            <param name="process">
-            The <see cref="T:CommonForms.Responsiveness.LongRunningProcessObject"/> class which declares the method
-            to be started.
-            </param>
-            <param name="method">
-            The name of the method to start on a background thread.
-            </param>
-            <param name="progressFormTitle">
-            Text to display in the title bar of the progress form.
-            </param>
-        </member>
-        <member name="M:CommonForms.Responsiveness.ResponsiveForm.ProvideFeedback">
-            <summary>
-            Updates progress bars to provide the user with feedback on the 
-            progress of a long-running process.
-            </summary>
-        </member>
-        <member name="M:CommonForms.Responsiveness.ResponsiveForm.StopTheClock">
-            <summary>
-            When overridden in a derived class, stops the timer, calls the 
-            UpdateUI method, enables any disabled controls and displays the
-            details of any exception which occurred during the long-running
-            process.
-            Run on the UI thread.
-            </summary>
-            <remarks>
-            Override this method to perform any additional tasks which are 
-            needed upon completion of a long-running process and then call this
-            base method.
-            </remarks>
-        </member>
-        <member name="M:CommonForms.Responsiveness.ResponsiveForm.HandleException(System.Exception)">
-            <summary>
-            Shows a form displaying the details of the supplied exception.
-            </summary>
-            <param name="ex">The exception to display the details of.</param>
-        </member>
-        <member name="M:CommonForms.Responsiveness.ResponsiveForm.BackgroundProcessTimerTick(System.Object,System.EventArgs)">
-            <summary>
-            Event handler for the tick event of the BackgroundProcessTimer.
-            Updates the user interface to provide the user with feedback on the
-            progress of a long-running process.
-            </summary>
-            <param name="sender">The control which raised the tick event</param>
-            <param name="e">More information about the event</param>
-        </member>
-        <member name="M:CommonForms.Responsiveness.ResponsiveForm.EnableControls(System.Windows.Forms.Control)">
-            <summary>
-            Enables all the controls on the supplied control, and their child
-            controls, provided they are of a type defined in the TypesToDisable
-            property
-            </summary>
-            <param name="parentControl">
-            The parent control or form which contains the controls to enable.
-            </param>
-        </member>
-        <member name="M:CommonForms.Responsiveness.ResponsiveForm.DisableControls(System.Windows.Forms.Control)">
-            <summary>
-            Disables all the controls on the supplied control, and their child
-            controls, provided they are of a type defined in the TypesToDisable
-            property
-            </summary>
-            <param name="parentControl">
-            The parent control or form which contains the controls to disable.
-            </param>
-        </member>
-        <member name="P:CommonForms.Responsiveness.ResponsiveForm.TypesToDisable">
-            <summary>
-            Gets a collection of types of control to disable whilst a background
-            thread is running.
-            </summary>
-            <remarks>
-            Override this property in a derived class to change the list of 
-            types to be disabled, for example:
-            <code>
-            protected static override Collection&lt;Type&gt; TypesToDisable
-            {
-            	get
-            	{
-            		Collection&lt;Type&gt; types = base.TypesToDisable;
-            		types.Add( typeof( CheckBox ) );
-            		types.Remove( typeof( PropertyGrid ) );
-            		return types;
-            	}
-            }
-            </code>
-            </remarks>
-        </member>
-        <member name="T:CommonForms.Responsiveness.ProgressControl">
-            <summary>
-            A windows forms control containing a progress bar and label.
-            </summary>
-        </member>
-        <member name="M:CommonForms.Responsiveness.ProgressControl.#ctor(CommonForms.Responsiveness.ProgressCounter)">
-            <summary>
-            Constructor.
-            </summary>
-            <param name="counter">
-            The progress counter which the control represents.
-            </param>
-        </member>
-        <member name="F:CommonForms.Responsiveness.ProgressControl.components">
-            <summary>
-            Designer variable used to keep track of non-visual components.
-            </summary>
-        </member>
-        <member name="M:CommonForms.Responsiveness.ProgressControl.Dispose(System.Boolean)">
-            <summary>
-            Disposes resources used by the control.
-            </summary>
-            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        </member>
-        <member name="M:CommonForms.Responsiveness.ProgressControl.InitializeComponent">
-            <summary>
-            This method is required for Windows Forms designer support.
-            Do not change the method contents inside the source code editor. The Forms designer might
-            not be able to load this method if it was changed manually.
-            </summary>
-        </member>
-        <member name="T:CommonForms.Responsiveness.ProgressCounter">
-            <summary>
-            Represents the progress of one aspect of a long-running process.
-            </summary>
-        </member>
-        <member name="M:CommonForms.Responsiveness.ProgressCounter.#ctor(System.String,System.Int32)">
-            <summary>
-            Constructor.
-            </summary>
-            <param name="narrative">
-            Text to display beside the ProgressBar, before the [value] of 
-            [maximum] text.
-            </param>
-            <param name="maximum">
-            The maximum value for this progress counter.
-            You can change this later by setting the Maximum property.
-            </param>
-        </member>
-        <member name="M:CommonForms.Responsiveness.ProgressCounter.ToString">
-            <summary>
-            Gets a string version of the progress counter's value and maximum.
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="P:CommonForms.Responsiveness.ProgressCounter.Narrative">
-            <summary>
-            Gets and sets the text to display for this counter, between the
-            ProgressBar and the [value] of [maximum] text.
-            </summary>
-        </member>
-        <member name="P:CommonForms.Responsiveness.ProgressCounter.Maximum">
-            <summary>
-            Gets and sets the maximum value for this ProgressCounter.
-            </summary>
-        </member>
-        <member name="P:CommonForms.Responsiveness.ProgressCounter.Value">
-            <summary>
-            Gets and sets the current value of this ProgressCounter.
-            </summary>
-        </member>
-        <member name="T:CommonForms.Responsiveness.ProgressForm">
-            <summary>
-            A dialogue to show the progress of a long-running process.
-            </summary>
-        </member>
-        <member name="M:CommonForms.Responsiveness.ProgressForm.#ctor(System.String)">
-            <summary>
-            Constructor.
-            </summary>
-        </member>
-        <member name="M:CommonForms.Responsiveness.ProgressForm.UpdateBars(CommonForms.Responsiveness.ProgressCounterDictionary)">
-            <summary>
-            Updates the progress bars on the form with the supplied counters.
-            </summary>
-            <param name="counters">
-            The counters to represent on the form with progress bars
-            </param>
-        </member>
-        <member name="M:CommonForms.Responsiveness.ProgressForm.AddControl(CommonForms.Responsiveness.ProgressCounter)">
-            <summary>
-            Adds a ProgressControl to the form
-            </summary>
-            <param name="counter">
-            The progress counter to represent on the control.
-            </param>
-        </member>
-        <member name="F:CommonForms.Responsiveness.ProgressForm.components">
-            <summary>
-            Designer variable used to keep track of non-visual components.
-            </summary>
-        </member>
-        <member name="M:CommonForms.Responsiveness.ProgressForm.Dispose(System.Boolean)">
-            <summary>
-            Disposes resources used by the form.
-            </summary>
-            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        </member>
-        <member name="M:CommonForms.Responsiveness.ProgressForm.InitializeComponent">
-            <summary>
-            This method is required for Windows Forms designer support.
-            Do not change the method contents inside the source code editor. The Forms designer might
-            not be able to load this method if it was changed manually.
             </summary>
         </member>
         <member name="T:CommonForms.CleverMessageBox">
@@ -733,6 +626,113 @@
             A <see cref="T:System.Windows.Forms.DialogResult"/> which reflects 
             the button which the user clicked in response to the CleverMessageBox.
             </returns>
+        </member>
+        <member name="T:CommonForms.Responsiveness.ProgressCounter">
+            <summary>
+            Represents the progress of one aspect of a long-running process.
+            </summary>
+        </member>
+        <member name="M:CommonForms.Responsiveness.ProgressCounter.#ctor(System.String,System.Int32)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="narrative">
+            Text to display beside the ProgressBar, before the [value] of 
+            [maximum] text.
+            </param>
+            <param name="maximum">
+            The maximum value for this progress counter.
+            You can change this later by setting the Maximum property.
+            </param>
+        </member>
+        <member name="M:CommonForms.Responsiveness.ProgressCounter.ToString">
+            <summary>
+            Gets a string version of the progress counter's value and maximum.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:CommonForms.Responsiveness.ProgressCounter.Narrative">
+            <summary>
+            Gets and sets the text to display for this counter, between the
+            ProgressBar and the [value] of [maximum] text.
+            </summary>
+        </member>
+        <member name="P:CommonForms.Responsiveness.ProgressCounter.Maximum">
+            <summary>
+            Gets and sets the maximum value for this ProgressCounter.
+            </summary>
+        </member>
+        <member name="P:CommonForms.Responsiveness.ProgressCounter.Value">
+            <summary>
+            Gets and sets the current value of this ProgressCounter.
+            </summary>
+        </member>
+        <member name="T:CommonForms.CreditableWork">
+            <summary>
+            Contains information about the work of another author which has been
+            incorporated into your project, or of which your project contains a
+            derivative work.
+            Used by the LicenseFormParameters class.
+            </summary>
+        </member>
+        <member name="P:CommonForms.CreditableWork.Author">
+            <summary>
+            The name(s) of the authors of the creditable work.
+            </summary>
+        </member>
+        <member name="P:CommonForms.CreditableWork.WorkName">
+            <summary>
+            The name of the creditable work.
+            </summary>
+        </member>
+        <member name="T:CommonForms.AboutFormParameters">
+            <summary>
+            Parameters for instantiation of a <see cref="T:CommonForms.AboutForm"/>.
+            </summary>
+        </member>
+        <member name="M:CommonForms.AboutFormParameters.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="P:CommonForms.AboutFormParameters.FormWidth">
+            <summary>
+            The width of the form in pixels.
+            </summary>
+        </member>
+        <member name="P:CommonForms.AboutFormParameters.ApplicationName">
+            <summary>
+            The name of the application.
+            This will be displayed in the title bar of the About box.
+            </summary>
+        </member>
+        <member name="P:CommonForms.AboutFormParameters.Author">
+            <summary>
+            The name of the author of the application.
+            </summary>
+        </member>
+        <member name="P:CommonForms.AboutFormParameters.CopyrightYear">
+            <summary>
+            The year of the copyright statement (may be a range of years)
+            </summary>
+        </member>
+        <member name="P:CommonForms.AboutFormParameters.ExtraCopyrightStatement">
+            <summary>
+            Any additional information about the license, e.g. a brief 
+            description of the type of license.
+            </summary>
+        </member>
+        <member name="P:CommonForms.AboutFormParameters.CreditableWorks">
+            <summary>
+            A collection of <see cref="P:CommonForms.AboutFormParameters.CreditableWorks"/> included in this
+            application.
+            </summary>
+        </member>
+        <member name="P:CommonForms.AboutFormParameters.LicenseFileName">
+            <summary>
+            The name of the file containing the license under which this
+            application is released.
+            </summary>
         </member>
     </members>
 </doc>

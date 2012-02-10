@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using System.Collections.Generic;
+using System.Windows.Forms;
 using NAudio.Utils;
 using System.Diagnostics;
 using NAudio.FileFormats.Mp3;
@@ -256,7 +257,14 @@ namespace NAudio.Wave
                     if (mp3Index != null)
                     {
                         // perform the reposition
-                        mp3Stream.Position = mp3Index.FilePosition;
+                        try
+                        {
+                            mp3Stream.Position = mp3Index.FilePosition;
+                        }
+                        catch (Exception WTFBBQ)
+                        {
+                            MessageBox.Show(WTFBBQ.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                     else
                     {

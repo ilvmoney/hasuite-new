@@ -71,12 +71,21 @@ namespace HaCreator.MapEditor
         /// Saves Map.wz to path
         /// </summary>
         /// <param name="path">Path you want to save the Map.wz to</param>
+        /// <param name="image">Image that needs to be saved</param>
         /// <returns>True if successful in saving the Map.wz, false if unsuccessful</returns>
-        public bool SaveMap(string path)
+        public bool SaveMap(string path, WzImage image/*List<WzImage> wzImages*/, ProgressBar progressBar)
         {
             try
             {
-                ((WzFile)wzFiles["map"]).SaveToDisk(path + "\\Map.wz");
+                /* I'll add in saving of all images stored in the tabs, when I... 
+                 * ...figure out how to fetch them. -DeathRight
+                */
+                //foreach (WzImage image in wzImages) {
+                if (progressBar != null) { progressBar.PerformStep(); progressBar.Refresh(); }  //20%
+                    image.SaveImage(version);
+                //}
+                ((WzFile)wzFiles["map"]).SaveToDisk(path + "\\Map.wz", progressBar);
+                if (progressBar != null) { progressBar.PerformStep(); progressBar.Refresh(); } //100%
                 return true;
             }
             catch (Exception WTFBBQ)

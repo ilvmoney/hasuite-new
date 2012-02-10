@@ -153,24 +153,27 @@ namespace NAudio.Wave
 
         private void EnqueueBuffers()
         {
-            for (int n = 0; n < NumberOfBuffers; n++)
+            if (buffers != null)
             {
-                if (!buffers[n].InQueue)
+                for (int n = 0; n < NumberOfBuffers; n++)
                 {
-                    if (buffers[n].OnDone())
+                    if (!buffers[n].InQueue)
                     {
-                        Interlocked.Increment(ref queuedBuffers);
+                        if (buffers[n].OnDone())
+                        {
+                            Interlocked.Increment(ref queuedBuffers);
+                        }
+                        else
+                        {
+                            playbackState = PlaybackState.Stopped;
+                            break;
+                        }
+                        //Debug.WriteLine(String.Format("Resume from Pause: Buffer [{0}] requeued", n));
                     }
                     else
                     {
-                        playbackState = PlaybackState.Stopped;
-                        break;
+                        //Debug.WriteLine(String.Format("Resume from Pause: Buffer [{0}] already queued", n));
                     }
-                    //Debug.WriteLine(String.Format("Resume from Pause: Buffer [{0}] requeued", n));
-                }
-                else
-                {
-                    //Debug.WriteLine(String.Format("Resume from Pause: Buffer [{0}] already queued", n));
                 }
             }
         }

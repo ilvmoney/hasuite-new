@@ -1,4 +1,4 @@
- using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,10 +12,13 @@ namespace HaCreator.GUI
 {
     public partial class Save : DevComponents.DotNetBar.Office2007Form
     {
-        public Save()
+        private MultiBoard multiBoard;
+
+        public Save(MultiBoard multiBoard)
         {
             InitializeComponent();
             styleManager.ManagerStyle = UserSettings.applicationStyle;
+            this.multiBoard = multiBoard;
         }
 
         private void Save_Load(object sender, EventArgs e)
@@ -38,12 +41,21 @@ namespace HaCreator.GUI
                 DialogResult msgbx = MessageBox.Show("Are you sure you want to save Map.wz?", "Save confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (msgbx == DialogResult.Yes)
                 {
-                  Program.WzManager.SaveMap(Program.WzManager.getWzPath() + "\\EdittedWZ"); //Whoops, forgot to add in EdittedWZ
+                    progressBar1.Enabled = true;
+                    progressBar1.PerformStep(); //10%
+                    progressBar1.Refresh();
+                    Program.WzManager.SaveMap(Program.WzManager.getWzPath() + "\\EdittedWZ", multiBoard.SelectedBoard.MapInfo.mapImage, progressBar1);
+                    MessageBox.Show("Save completed!", "Completed", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             
             } /*else {
                 MessageBox.Show("Some shiz went down!" ,"FFFFFFFFFFFUUUUUUUUUUUUUU-", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }*/
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
