@@ -1,1 +1,2 @@
 C:\Users\Travis\Desktop\HaSuite\WindowsGame1\WindowsGame1Content\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Travis\Desktop\hasuite-new\WindowsGame1\WindowsGame1Content\obj\x86\Debug\ResolveAssemblyReference.cache

@@ -28,6 +28,7 @@ using System.Windows.Media.Media3D;
 using System.Windows.Media.TextFormatting;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Shell;
 using WPFColorPickerLib;
 
 
@@ -37,10 +38,12 @@ namespace WPFColorPickerLib {
     /// <summary>
     /// ColorDialog
     /// </summary>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "4.0.0.0")]
     public partial class ColorDialog : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
         
         #line 17 "..\..\..\ColorDialog.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal WPFColorPickerLib.ColorPicker colorPicker;
         
         #line default
@@ -48,6 +51,7 @@ namespace WPFColorPickerLib {
         
         
         #line 27 "..\..\..\ColorDialog.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button btnOK;
         
         #line default
@@ -55,6 +59,7 @@ namespace WPFColorPickerLib {
         
         
         #line 35 "..\..\..\ColorDialog.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button btnCancel;
         
         #line default
@@ -89,6 +94,8 @@ namespace WPFColorPickerLib {
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Never)]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Design", "CA1033:InterfaceMethodsShouldBeCallableByChildTypes")]
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily")]
         void System.Windows.Markup.IComponentConnector.Connect(int connectionId, object target) {
             switch (connectionId)
             {

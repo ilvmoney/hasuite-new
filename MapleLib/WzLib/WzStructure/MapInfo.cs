@@ -33,9 +33,19 @@ namespace MapleLib.WzLib.WzStructure
 
 
         public static MapInfo Default = new MapInfo();
+        public Dictionary<string, int> props = new Dictionary<string,int>();
 
         public MapInfo()
         {
+        }
+
+        public void loadIntProps(WzImage image)
+        {
+            foreach (IWzImageProperty prop in image["info"].WzProperties)
+            {
+                if (prop is WzCompressedIntProperty)
+                    props.Add(prop.Name, InfoTool.GetInt(prop));
+            }
         }
 
         public MapInfo(WzImage image, string strMapName, string strStreetName)

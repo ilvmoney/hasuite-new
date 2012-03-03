@@ -266,13 +266,16 @@ namespace HaCreator.MapEditor
             return instance;
         }
 
-        public BoardItem CreateInstance(Layer layer, Board board, int x, int y, int z, MapleBool r, MapleBool hide, MapleBool reactor, MapleBool flow, int? rx, int? ry, int? cx, int? cy, string name, string tags, List<ObjectInstanceQuest> questInfo, bool flip, bool beforeAdding, bool parseOffsets)
+        public BoardItem CreateInstance(Layer layer, Board board, int x, int y, int z, MapleBool r, MapleBool hide, MapleBool reactor, MapleBool flow, int? rx, int? ry, int? cx, int? cy, string name, string tags, List<ObjectInstanceQuest> questInfo, bool flip, bool beforeAdding, bool parseOffsets, string realName = "")
         {
-            ObjectInstance instance = new ObjectInstance(this, layer, board, x, y, z, r, hide, reactor, flow, rx, ry, cx, cy, name, tags, questInfo, flip, beforeAdding);
+            ObjectInstance instance = new ObjectInstance(this, layer, board, x, y, z, r, hide, reactor, flow, rx, ry, cx, cy, name, tags, questInfo, flip, beforeAdding, realName);
             if (parseOffsets) ParseOffsets(instance, layer, board, x, y);
             return instance;
         }
 
+        /// <summary>
+        /// The name of the Object Source
+        /// </summary>
         public string oS
         {
             get
@@ -285,6 +288,9 @@ namespace HaCreator.MapEditor
             }
         }
 
+        /// <summary>
+        /// The name of the first Layer (oS->l0)
+        /// </summary>
         public string l0
         {
             get
@@ -297,6 +303,9 @@ namespace HaCreator.MapEditor
             }
         }
 
+        /// <summary>
+        /// The name of the second layer (oS->l0->l1)
+        /// </summary>
         public string l1
         {
             get
@@ -309,6 +318,9 @@ namespace HaCreator.MapEditor
             }
         }
 
+        /// <summary>
+        /// The name of the third layer (oS->l0->l1->l2)
+        /// </summary>
         public string l2
         {
             get
@@ -406,13 +418,16 @@ namespace HaCreator.MapEditor
             return instance;
         }
 
-        public BoardItem CreateInstance(Layer layer, Board board, int x, int y, int z, bool flip, bool beforeAdding, bool parseOffsets)
+        public BoardItem CreateInstance(Layer layer, Board board, int x, int y, int z, bool flip, bool beforeAdding, bool parseOffsets, string realName = "")
         {
-            TileInstance instance = new TileInstance(this, layer, board, x, y, z, beforeAdding);
+            TileInstance instance = new TileInstance(this, layer, board, x, y, z, beforeAdding, realName);
             if (parseOffsets) ParseOffsets(instance, board, layer, x, y);
             return instance;
         }
 
+        /// <summary>
+        /// The name of the Tile Source
+        /// </summary>
         public string tS
         {
             get
@@ -425,6 +440,9 @@ namespace HaCreator.MapEditor
             }
         }
 
+        /// <summary>
+        /// The name of the first layer (tS->u)
+        /// </summary>
         public string u
         {
             get
@@ -437,6 +455,9 @@ namespace HaCreator.MapEditor
             }
         }
 
+        /// <summary>
+        /// The name of the second layer (tS->u->no)
+        /// </summary>
         public string no
         {
             get

@@ -34,6 +34,7 @@ namespace HaCreator.GUI
         {
             InitializeComponent();
             styleManager.ManagerStyle = UserSettings.applicationStyle;
+            this.Text += Program.version;
         }
 
         public static bool XNASelfCheck(ref string exceptionResult)
@@ -58,7 +59,8 @@ namespace HaCreator.GUI
             string wzPath = (string)pathBox.SelectedItem;
             if (wzPath == "Select Maple Folder")
             {
-                MessageBox.Show("Please select the maple folder.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("Please select the maple folder.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                new GUI.ErrorBox("Please select the maple folder.");
                 return;
             }
             if (!ApplicationSettings.MapleFolder.Contains(wzPath))

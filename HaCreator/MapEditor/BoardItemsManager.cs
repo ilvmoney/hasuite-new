@@ -91,6 +91,8 @@ namespace HaCreator.MapEditor
     {
         public MapleList<BackgroundInstance> BackBackgrounds = new MapleList<BackgroundInstance>(ItemTypes.Backgrounds, true);
         public MapleList<LayeredItem> TileObjs = new MapleList<LayeredItem>(ItemTypes.None, true);
+        //public MapleList<LayeredItem> Tiles = new MapleList<LayeredItem>(ItemTypes.Tiles, true);
+        //public MapleList<LayeredItem> Objects = new MapleList<LayeredItem>(ItemTypes.Objects, true);
         public MapleList<LifeInstance> Mobs = new MapleList<LifeInstance>(ItemTypes.Mobs, true);
         public MapleList<LifeInstance> NPCs = new MapleList<LifeInstance>(ItemTypes.NPCs, true);
         public MapleList<ReactorInstance> Reactors = new MapleList<ReactorInstance>(ItemTypes.Reactors, true);
@@ -138,7 +140,11 @@ namespace HaCreator.MapEditor
         public void Remove(BoardItem item)
         {
             if (item is TileInstance || item is ObjectInstance)
+            {
                 TileObjs.Remove((LayeredItem)item);
+                //if (item is TileInstance) Tiles.Remove((LayeredItem)item);
+                //if (item is ObjectInstance) Objects.Remove((LayeredItem)item);
+            }
             else
             {
                 Type itemType = item.GetType();
@@ -160,6 +166,8 @@ namespace HaCreator.MapEditor
             if (item is TileInstance || item is ObjectInstance)
             {
                 TileObjs.Add((LayeredItem)item);
+                //if (item is TileInstance) Tiles.Add((LayeredItem)item);
+                //if (item is ObjectInstance) Objects.Add((LayeredItem)item);
                 if (sort) Sort();
             }
             else

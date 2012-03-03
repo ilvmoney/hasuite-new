@@ -54,7 +54,8 @@ namespace HaCreator.MapEditor
         private ObjectInfo baseInfo;
         private bool flip;
         private MapleBool _r;
-        private string name;
+        private string name; //I don't think this is the actual name, derno what it is -DeathRight
+        private string realName = ""; //Just to be sure -DeathRight
         private MapleBool _hide;
         private MapleBool _reactor;
         private MapleBool _flow;
@@ -65,13 +66,14 @@ namespace HaCreator.MapEditor
 
         //private int zM;
 
-        public ObjectInstance(ObjectInfo baseInfo, Layer layer, Board board, int x, int y, int z, MapleBool r, MapleBool hide, MapleBool reactor, MapleBool flow, int? rx, int? ry, int? cx, int? cy, string name, string tags, List<ObjectInstanceQuest> questInfo, bool flip, bool beforeAdding)
+        public ObjectInstance(ObjectInfo baseInfo, Layer layer, Board board, int x, int y, int z, MapleBool r, MapleBool hide, MapleBool reactor, MapleBool flow, int? rx, int? ry, int? cx, int? cy, string name, string tags, List<ObjectInstanceQuest> questInfo, bool flip, bool beforeAdding, string realName = "")
             : base(board, layer, x, y, z, beforeAdding)
         {
             this.baseInfo = baseInfo;
             this.flip = flip;
             this._r = r;
             this.name = name;
+            if (realName != "") this.realName = realName;
             this._hide = hide;
             this._reactor = reactor;
             this._flow = flow;
@@ -153,6 +155,7 @@ namespace HaCreator.MapEditor
         }
 
         public string Name { get { return name; } set { name = value; } }
+        public string RealName { get { return realName; } set { realName = value; } }
         public string tags { get { return _tags; } set { _tags = value; } }
         public MapleBool r { get { return _r; } set { _r = value; } }
         public MapleBool hide { get { return _hide; } set { _hide = value; } }
@@ -167,12 +170,14 @@ namespace HaCreator.MapEditor
 
     public class TileInstance : LayeredItem, ISnappable
     {
+        private string realName = "";
         private TileInfo baseInfo;
 
-        public TileInstance(TileInfo baseInfo, Layer layer, Board board, int x, int y, int z, bool beforeAdding)
+        public TileInstance(TileInfo baseInfo, Layer layer, Board board, int x, int y, int z, bool beforeAdding, string realName = "")
             : base(board, layer, x, y, z, beforeAdding)
         {
             this.baseInfo = baseInfo;
+            if (realName != "") this.realName = realName;
             AttachToLayer(layer);
             //baseInfo.ParseOffsets(this, Board, Layer, X, Y);
         }
@@ -282,6 +287,8 @@ namespace HaCreator.MapEditor
                 return baseInfo.Origin;
             }
         }
+
+        public string RealName { get { return realName; } set { realName = value; } }
     }
 
     public class LifeInstance : BoardItem, IFlippable

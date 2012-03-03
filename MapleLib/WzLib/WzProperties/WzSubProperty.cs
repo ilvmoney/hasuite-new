@@ -91,6 +91,18 @@ namespace MapleLib.WzLib.WzProperties
 			}
 		}
 
+        /*public override IWzImageProperty GetByName(string name)
+        {
+            foreach (IWzImageProperty stuff in properties)
+            {
+                if (stuff.Name == name) return stuff;
+                else
+                {
+
+                }
+            }
+        }*/
+
 		/// <summary>
 		/// Gets a wz property by a path name
 		/// </summary>

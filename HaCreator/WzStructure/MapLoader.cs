@@ -145,6 +145,7 @@ namespace HaCreator.WzStructure
                     string l1 = InfoTool.GetString(obj["l1"]);
                     string l2 = InfoTool.GetString(obj["l2"]);
                     string name = InfoTool.GetOptionalString(obj["name"]);
+                    string realName = ((WzSubProperty)obj).Name;
                     MapleBool r = InfoTool.GetOptionalBool(obj["r"]);
                     MapleBool hide = InfoTool.GetOptionalBool(obj["hide"]);
                     MapleBool reactor = InfoTool.GetOptionalBool(obj["reactor"]);
@@ -164,13 +165,14 @@ namespace HaCreator.WzStructure
                     if (objInfoProp.HCTag == null)
                         objInfoProp.HCTag = ObjectInfo.Load((WzSubProperty)objInfoProp, oS, l0, l1, l2);
                     ObjectInfo objInfo = (ObjectInfo)objInfoProp.HCTag;
-                    mapBoard.BoardItems.TileObjs.Add((LayeredItem)objInfo.CreateInstance(mapBoard.Layers[layer], mapBoard, x, y, z, r, hide, reactor, flow, rx, ry, cx, cy, name, tags, questInfo, flip, false, false));
+                    mapBoard.BoardItems.TileObjs.Add((LayeredItem)objInfo.CreateInstance(mapBoard.Layers[layer], mapBoard, x, y, z, r, hide, reactor, flow, rx, ry, cx, cy, name, tags, questInfo, flip, false, false, realName));
                 }
                 IWzImageProperty tileParent = layerProp["tile"];
                 for (int i = 0; i < tileParent.WzProperties.Count; i++)
                 //foreach (IWzImageProperty tile in layerProp["tile"].WzProperties)
                 {
                     IWzImageProperty tile = tileParent.WzProperties[i];
+                    string realName = ((WzSubProperty)tile).Name;
                     int x = InfoTool.GetInt(tile["x"]);
                     int y = InfoTool.GetInt(tile["y"]);
                     //int zM = InfoTool.GetInt(tile["zM"]);
@@ -180,7 +182,7 @@ namespace HaCreator.WzStructure
                     if (tileInfoProp.HCTag == null)
                         tileInfoProp.HCTag = TileInfo.Load((WzCanvasProperty)tileInfoProp, tS, u, no.ToString());
                     TileInfo tileInfo = (TileInfo)tileInfoProp.HCTag;
-                    mapBoard.BoardItems.TileObjs.Add((LayeredItem)tileInfo.CreateInstance(mapBoard.Layers[layer], mapBoard, x, y, i /*zM*/, false, false, false));
+                    mapBoard.BoardItems.TileObjs.Add((LayeredItem)tileInfo.CreateInstance(mapBoard.Layers[layer], mapBoard, x, y, i /*zM*/, false, false, false, realName));
                 }
             }
         }
@@ -325,6 +327,7 @@ namespace HaCreator.WzStructure
             List<FootholdAnchor> anchors = new List<FootholdAnchor>();
             WzSubProperty footholdParent = (WzSubProperty)mapImage["foothold"];
             int layer;
+            int plat;
             FootholdAnchor a;
             FootholdAnchor b;
             FootholdAnchor c;
@@ -333,10 +336,12 @@ namespace HaCreator.WzStructure
             {
                 layer = int.Parse(layerProp.Name);
                 foreach (WzSubProperty platProp in layerProp.WzProperties)
+                {
+                    plat = int.Parse(platProp.Name);
                     foreach (WzSubProperty fhProp in platProp.WzProperties)
                     {
-                        a = new FootholdAnchor(mapBoard, InfoTool.GetInt(fhProp["x1"]), InfoTool.GetInt(fhProp["y1"]), layer, false);
-                        b = new FootholdAnchor(mapBoard, InfoTool.GetInt(fhProp["x2"]), InfoTool.GetInt(fhProp["y2"]), layer, false);
+                        a = new FootholdAnchor(mapBoard, InfoTool.GetInt(fhProp["x1"]), InfoTool.GetInt(fhProp["y1"]), layer, false, plat);
+                        b = new FootholdAnchor(mapBoard, InfoTool.GetInt(fhProp["x2"]), InfoTool.GetInt(fhProp["y2"]), layer, false, plat);
                         int num = int.Parse(fhProp.Name);
                         int next = InfoTool.GetInt(fhProp["next"]);
                         int prev = InfoTool.GetInt(fhProp["prev"]);
@@ -346,11 +351,13 @@ namespace HaCreator.WzStructure
                             fh.num = num;
                             fh.prev = prev;
                             fh.next = next;
+                            fh.Name = fhProp.Name;
                             mapBoard.BoardItems.FootholdLines.Add(fh);
                             anchors.Add(a);
                             anchors.Add(b);
                         }
                     }
+                }
 
                 anchors.Sort(new Comparison<FootholdAnchor>(FootholdAnchor.FHAnchorSorter));
                 int groupStart = 0; //inclusive

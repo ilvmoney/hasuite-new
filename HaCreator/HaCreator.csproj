@@ -81,7 +81,7 @@
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
-    <Win32Resource>C:\Users\Travis\Desktop\HaSuite\ResourceTemplate.res</Win32Resource>
+    <Win32Resource>C:\Users\Travis\Desktop\hasuite-new\ResourceTemplate.res</Win32Resource>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <DebugSymbols>true</DebugSymbols>
@@ -219,6 +219,24 @@
     <Compile Include="GUI\Editor.Designer.cs">
       <DependentUpon>Editor.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\ErrorBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ErrorBox.Designer.cs">
+      <DependentUpon>ErrorBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\YesNoBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\YesNoBox.Designer.cs">
+      <DependentUpon>YesNoBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\InfoMsgBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\InfoMsgBox.Designer.cs">
+      <DependentUpon>InfoMsgBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Save.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -329,6 +347,7 @@
     <Compile Include="CustomControls\DirectXHolder.Designer.cs">
       <DependentUpon>DirectXHolder.cs</DependentUpon>
     </Compile>
+    <Compile Include="MapEditor\Saver.cs" />
     <Compile Include="MapEditor\FontEngine.cs" />
     <Compile Include="MapEditor\InputHandler.cs" />
     <Compile Include="MapEditor\ISnappable.cs" />
@@ -363,9 +382,18 @@
     <EmbeddedResource Include="GUI\Editor.resx">
       <DependentUpon>Editor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ErrorBox.resx">
+      <DependentUpon>ErrorBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\ExceptionHandler.resx">
       <DependentUpon>ExceptionHandler.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\YesNoBox.resx">
+      <DependentUpon>YesNoBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\InfoMsgBox.resx">
+      <DependentUpon>InfoMsgBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\InfoEditor.resx">
       <DependentUpon>InfoEditor.cs</DependentUpon>
@@ -524,6 +552,148 @@
     <None Include="Resources\Sharingan32.png" />
     <None Include="Resources\Sharingan60.png" />
     <None Include="Resources\help_icon.png" />
+    <Content Include="Resources\MascotSprites\angry_0.png" />
+    <Content Include="Resources\MascotSprites\angry_1.png" />
+    <Content Include="Resources\MascotSprites\angry_2.png" />
+    <Content Include="Resources\MascotSprites\angry_3.png" />
+    <Content Include="Resources\MascotSprites\angry_4.png" />
+    <Content Include="Resources\MascotSprites\angry_5.png" />
+    <Content Include="Resources\MascotSprites\angry_6.png" />
+    <Content Include="Resources\MascotSprites\angry_7.png" />
+    <Content Include="Resources\MascotSprites\angry_8.png" />
+    <Content Include="Resources\MascotSprites\angry_9.png" />
+    <Content Include="Resources\MascotSprites\chat_0.png" />
+    <Content Include="Resources\MascotSprites\chat_1.png" />
+    <Content Include="Resources\MascotSprites\chat_2.png" />
+    <Content Include="Resources\MascotSprites\chat_3.png" />
+    <Content Include="Resources\MascotSprites\chat_4.png" />
+    <Content Include="Resources\MascotSprites\chat_5.png" />
+    <Content Include="Resources\MascotSprites\cry_0.png" />
+    <Content Include="Resources\MascotSprites\cry_1.png" />
+    <Content Include="Resources\MascotSprites\cry_2.png" />
+    <Content Include="Resources\MascotSprites\cry_3.png" />
+    <Content Include="Resources\MascotSprites\cry_4.png" />
+    <Content Include="Resources\MascotSprites\cry_5.png" />
+    <Content Include="Resources\MascotSprites\dung_0.png" />
+    <Content Include="Resources\MascotSprites\dung_1.png" />
+    <Content Include="Resources\MascotSprites\dung_2.png" />
+    <Content Include="Resources\MascotSprites\dung_3.png" />
+    <Content Include="Resources\MascotSprites\dung_4.png" />
+    <Content Include="Resources\MascotSprites\dung_5.png" />
+    <Content Include="Resources\MascotSprites\eat_0.png" />
+    <Content Include="Resources\MascotSprites\eat_1.png" />
+    <Content Include="Resources\MascotSprites\eat_2.png" />
+    <Content Include="Resources\MascotSprites\eat_3.png" />
+    <Content Include="Resources\MascotSprites\eat_4.png" />
+    <Content Include="Resources\MascotSprites\eat_5.png" />
+    <Content Include="Resources\MascotSprites\fly_0.png" />
+    <Content Include="Resources\MascotSprites\fly_1.png" />
+    <Content Include="Resources\MascotSprites\fly_2.png" />
+    <Content Include="Resources\MascotSprites\fly_3.png" />
+    <Content Include="Resources\MascotSprites\fly_4.png" />
+    <Content Include="Resources\MascotSprites\fly_5.png" />
+    <Content Include="Resources\MascotSprites\hang_0.png" />
+    <Content Include="Resources\MascotSprites\hungry_0.png" />
+    <Content Include="Resources\MascotSprites\hungry_1.png" />
+    <Content Include="Resources\MascotSprites\hungry_2.png" />
+    <Content Include="Resources\MascotSprites\hungry_3.png" />
+    <Content Include="Resources\MascotSprites\hungry_4.png" />
+    <Content Include="Resources\MascotSprites\hungry_5.png" />
+    <Content Include="Resources\MascotSprites\ignore_0.png" />
+    <Content Include="Resources\MascotSprites\ignore_1.png" />
+    <Content Include="Resources\MascotSprites\ignore_2.png" />
+    <Content Include="Resources\MascotSprites\ignore_3.png" />
+    <Content Include="Resources\MascotSprites\ignore_4.png" />
+    <Content Include="Resources\MascotSprites\ignore_5.png" />
+    <Content Include="Resources\MascotSprites\info_0.png" />
+    <Content Include="Resources\MascotSprites\info_1.png" />
+    <Content Include="Resources\MascotSprites\info_2.png" />
+    <Content Include="Resources\MascotSprites\info_3.png" />
+    <Content Include="Resources\MascotSprites\jump_0.png" />
+    <Content Include="Resources\MascotSprites\love_0.png" />
+    <Content Include="Resources\MascotSprites\love_1.png" />
+    <Content Include="Resources\MascotSprites\love_10.png" />
+    <Content Include="Resources\MascotSprites\love_11.png" />
+    <Content Include="Resources\MascotSprites\love_2.png" />
+    <Content Include="Resources\MascotSprites\love_3.png" />
+    <Content Include="Resources\MascotSprites\love_4.png" />
+    <Content Include="Resources\MascotSprites\love_5.png" />
+    <Content Include="Resources\MascotSprites\love_6.png" />
+    <Content Include="Resources\MascotSprites\love_7.png" />
+    <Content Include="Resources\MascotSprites\love_8.png" />
+    <Content Include="Resources\MascotSprites\love_9.png" />
+    <Content Include="Resources\MascotSprites\move_0.png" />
+    <Content Include="Resources\MascotSprites\move_1.png" />
+    <Content Include="Resources\MascotSprites\move_2.png" />
+    <Content Include="Resources\MascotSprites\move_3.png" />
+    <Content Include="Resources\MascotSprites\move_4.png" />
+    <Content Include="Resources\MascotSprites\move_5.png" />
+    <Content Include="Resources\MascotSprites\no_0.png" />
+    <Content Include="Resources\MascotSprites\no_1.png" />
+    <Content Include="Resources\MascotSprites\no_2.png" />
+    <Content Include="Resources\MascotSprites\no_3.png" />
+    <Content Include="Resources\MascotSprites\no_4.png" />
+    <Content Include="Resources\MascotSprites\no_5.png" />
+    <Content Include="Resources\MascotSprites\play_0.png" />
+    <Content Include="Resources\MascotSprites\play_1.png" />
+    <Content Include="Resources\MascotSprites\play_10.png" />
+    <Content Include="Resources\MascotSprites\play_11.png" />
+    <Content Include="Resources\MascotSprites\play_12.png" />
+    <Content Include="Resources\MascotSprites\play_13.png" />
+    <Content Include="Resources\MascotSprites\play_14.png" />
+    <Content Include="Resources\MascotSprites\play_15.png" />
+    <Content Include="Resources\MascotSprites\play_16.png" />
+    <Content Include="Resources\MascotSprites\play_17.png" />
+    <Content Include="Resources\MascotSprites\play_18.png" />
+    <Content Include="Resources\MascotSprites\play_2.png" />
+    <Content Include="Resources\MascotSprites\play_3.png" />
+    <Content Include="Resources\MascotSprites\play_4.png" />
+    <Content Include="Resources\MascotSprites\play_5.png" />
+    <Content Include="Resources\MascotSprites\play_6.png" />
+    <Content Include="Resources\MascotSprites\play_7.png" />
+    <Content Include="Resources\MascotSprites\play_8.png" />
+    <Content Include="Resources\MascotSprites\play_9.png" />
+    <Content Include="Resources\MascotSprites\rest0_0.png" />
+    <Content Include="Resources\MascotSprites\rest0_1.png" />
+    <Content Include="Resources\MascotSprites\rest0_2.png" />
+    <Content Include="Resources\MascotSprites\rest0_3.png" />
+    <Content Include="Resources\MascotSprites\rest0_4.png" />
+    <Content Include="Resources\MascotSprites\rest0_5.png" />
+    <Content Include="Resources\MascotSprites\sit_0.png" />
+    <Content Include="Resources\MascotSprites\sit_1.png" />
+    <Content Include="Resources\MascotSprites\sit_2.png" />
+    <Content Include="Resources\MascotSprites\sit_3.png" />
+    <Content Include="Resources\MascotSprites\sit_4.png" />
+    <Content Include="Resources\MascotSprites\sit_5.png" />
+    <Content Include="Resources\MascotSprites\sleep_0.png" />
+    <Content Include="Resources\MascotSprites\sleep_1.png" />
+    <Content Include="Resources\MascotSprites\sleep_10.png" />
+    <Content Include="Resources\MascotSprites\sleep_11.png" />
+    <Content Include="Resources\MascotSprites\sleep_2.png" />
+    <Content Include="Resources\MascotSprites\sleep_3.png" />
+    <Content Include="Resources\MascotSprites\sleep_4.png" />
+    <Content Include="Resources\MascotSprites\sleep_5.png" />
+    <Content Include="Resources\MascotSprites\sleep_6.png" />
+    <Content Include="Resources\MascotSprites\sleep_7.png" />
+    <Content Include="Resources\MascotSprites\sleep_8.png" />
+    <Content Include="Resources\MascotSprites\sleep_9.png" />
+    <Content Include="Resources\MascotSprites\stand0_0.png" />
+    <Content Include="Resources\MascotSprites\stand0_1.png" />
+    <Content Include="Resources\MascotSprites\stand0_2.png" />
+    <Content Include="Resources\MascotSprites\stand0_3.png" />
+    <Content Include="Resources\MascotSprites\stand0_4.png" />
+    <Content Include="Resources\MascotSprites\stand0_5.png" />
+    <Content Include="Resources\MascotSprites\stand1_0.png" />
+    <Content Include="Resources\MascotSprites\stand1_1.png" />
+    <Content Include="Resources\MascotSprites\stand1_10.png" />
+    <Content Include="Resources\MascotSprites\stand1_2.png" />
+    <Content Include="Resources\MascotSprites\stand1_3.png" />
+    <Content Include="Resources\MascotSprites\stand1_4.png" />
+    <Content Include="Resources\MascotSprites\stand1_5.png" />
+    <Content Include="Resources\MascotSprites\stand1_6.png" />
+    <Content Include="Resources\MascotSprites\stand1_7.png" />
+    <Content Include="Resources\MascotSprites\stand1_8.png" />
+    <Content Include="Resources\MascotSprites\stand1_9.png" />
     <Content Include="sharingan.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -585,6 +755,7 @@
       <FileType>Assembly</FileType>
     </PublishFile>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

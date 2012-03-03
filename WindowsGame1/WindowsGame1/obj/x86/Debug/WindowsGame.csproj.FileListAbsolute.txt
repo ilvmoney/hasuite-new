@@ -5,3 +5,10 @@ C:\Users\Travis\Desktop\HaSuite\WindowsGame1\WindowsGame1\obj\x86\Debug\ResolveA
 C:\Users\Travis\Desktop\HaSuite\WindowsGame1\WindowsGame1\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Travis\Desktop\HaSuite\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.exe
 C:\Users\Travis\Desktop\HaSuite\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.pdb
+C:\Users\Travis\Desktop\hasuite-new\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Arial.xnb
+C:\Users\Travis\Desktop\hasuite-new\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.exe
+C:\Users\Travis\Desktop\hasuite-new\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.pdb
+C:\Users\Travis\Desktop\hasuite-new\WindowsGame1\WindowsGame1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Travis\Desktop\hasuite-new\WindowsGame1\WindowsGame1\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Travis\Desktop\hasuite-new\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.exe
+C:\Users\Travis\Desktop\hasuite-new\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.pdb
