@@ -181,4 +181,430 @@
   <data name="help_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\help_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="angry_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\angry_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="angry_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\angry_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="angry_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\angry_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="angry_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\angry_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="angry_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\angry_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="angry_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\angry_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="angry_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\angry_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="angry_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\angry_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="angry_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\angry_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="angry_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\angry_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chat_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\chat_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chat_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\chat_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chat_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\chat_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chat_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\chat_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chat_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\chat_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chat_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\chat_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cry_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\cry_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cry_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\cry_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cry_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\cry_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cry_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\cry_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cry_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\cry_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cry_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\cry_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dung_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\dung_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dung_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\dung_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dung_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\dung_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dung_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\dung_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dung_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\dung_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dung_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\dung_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eat_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\eat_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eat_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\eat_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eat_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\eat_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eat_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\eat_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eat_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\eat_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eat_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\eat_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fly_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\fly_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fly_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\fly_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fly_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\fly_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fly_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\fly_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fly_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\fly_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fly_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\fly_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hang_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\hang_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hungry_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\hungry_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hungry_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\hungry_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hungry_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\hungry_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hungry_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\hungry_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hungry_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\hungry_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hungry_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\hungry_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ignore_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\ignore_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ignore_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\ignore_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ignore_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\ignore_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ignore_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\ignore_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ignore_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\ignore_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ignore_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\ignore_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="info_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\info_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="info_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\info_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="info_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\info_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="info_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\info_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jump_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\jump_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="love_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\love_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="love_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\love_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="love_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\love_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="love_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\love_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="love_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\love_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="love_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\love_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="love_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\love_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="love_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\love_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="love_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\love_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="love_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\love_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="love_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\love_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="love_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\love_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="move_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\move_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="move_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\move_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="move_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\move_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="move_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\move_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="move_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\move_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="move_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\move_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="no_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\no_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="no_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\no_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="no_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\no_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="no_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\no_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="no_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\no_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="no_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\no_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="play_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\play_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="play_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\play_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="play_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\play_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="play_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\play_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="play_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\play_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="play_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\play_13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="play_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\play_14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="play_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\play_15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="play_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\play_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="play_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\play_17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="play_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\play_18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="play_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\play_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="play_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\play_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="play_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\play_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="play_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\play_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="play_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\play_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="play_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\play_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="play_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\play_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="play_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\play_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rest0_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\rest0_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rest0_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\rest0_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rest0_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\rest0_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rest0_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\rest0_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rest0_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\rest0_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rest0_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\rest0_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sit_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\sit_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sit_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\sit_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sit_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\sit_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sit_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\sit_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sit_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\sit_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sit_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\sit_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sleep_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\sleep_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sleep_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\sleep_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sleep_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\sleep_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sleep_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\sleep_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sleep_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\sleep_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sleep_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\sleep_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sleep_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\sleep_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sleep_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\sleep_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sleep_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\sleep_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sleep_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\sleep_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sleep_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\sleep_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sleep_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\sleep_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stand0_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\stand0_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stand0_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\stand0_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stand0_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\stand0_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stand0_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\stand0_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stand0_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\stand0_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stand0_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\stand0_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stand1_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\stand1_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stand1_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\stand1_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stand1_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\stand1_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stand1_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\stand1_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stand1_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\stand1_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stand1_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\stand1_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stand1_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\stand1_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stand1_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\stand1_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stand1_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\stand1_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stand1_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\stand1_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stand1_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MascotSprites\stand1_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

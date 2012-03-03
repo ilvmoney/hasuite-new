@@ -22,6 +22,8 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using MapleLib.WzLib.WzStructure.Data;
 using MapleLib.WzLib.WzStructure;
+using MapleLib.WzLib;
+using MapleLib.WzLib.WzProperties;
 
 namespace HaCreator.MapEditor
 {

@@ -147,13 +147,15 @@ namespace HaCreator.MapEditor
     public class FootholdAnchor : MapleDot, IContainsLayerInfo
     {
         private int layer;
+        private int plat = -99;
 
         public bool removed;
 
-        public FootholdAnchor(Board board, int x, int y, int layer, bool beforeAdding)
+        public FootholdAnchor(Board board, int x, int y, int layer, bool beforeAdding, int plat = -99)
             : base(board, x, y, beforeAdding)
         {
             this.layer = layer;
+            this.plat = plat;
         }
 
         public override bool CheckIfLayerSelected(int selectedLayer)
@@ -219,6 +221,8 @@ namespace HaCreator.MapEditor
             get { return layer; }
             set { layer = value; }
         }
+
+        public int PlatNumber { get { return plat; } set { plat = value; } }
 
         //public bool keyAnchor = false; //for foothold parsing
     }
@@ -472,6 +476,7 @@ namespace HaCreator.MapEditor
         private MapleBool _forbidFallDown;
         private int? _piece;
         private int? _force;
+        private string name = "";
 
         //temporary variables:
         public FootholdLine cloneLine = null;
@@ -580,6 +585,7 @@ namespace HaCreator.MapEditor
         public int? Piece { get { return _piece; } set { _piece = value; } }
         public MapleBool ForbidFallDown { get { return _forbidFallDown; } set { _forbidFallDown = value; } }
         public MapleBool CantThrough { get { return _cantThrough; } set { _cantThrough = value; } }
+        public string Name { get { return name; } set { name = value; } }
 
         public int num; //temporary, for saving.
     }

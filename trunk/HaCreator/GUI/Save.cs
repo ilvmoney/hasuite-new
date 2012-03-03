@@ -38,14 +38,17 @@ namespace HaCreator.GUI
         {
             if (Program.WzManager.getWzPath() != "ERROR")
             {
-                DialogResult msgbx = MessageBox.Show("Are you sure you want to save Map.wz?", "Save confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (msgbx == DialogResult.Yes)
+                Form msgbx = new GUI.YesNoBox("Save confirmation", "Are you sure you want to save Map.wz?", "Yes", "No");
+                //DialogResult msgbx = MessageBox.Show("Are you sure you want to save Map.wz?", "Save confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                //if (msgbx == DialogResult.Yes)
+                if (msgbx.DialogResult == DialogResult.Yes)
                 {
                     progressBar1.Enabled = true;
                     progressBar1.PerformStep(); //10%
                     progressBar1.Refresh();
                     Program.WzManager.SaveMap(Program.WzManager.getWzPath() + "\\EdittedWZ", multiBoard.SelectedBoard.MapInfo.mapImage, progressBar1);
-                    MessageBox.Show("Save completed!", "Completed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //MessageBox.Show("Save completed!", "Completed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    new GUI.InfoMsgBox("Completed", "Save completed!");
                 }
             
             } /*else {
