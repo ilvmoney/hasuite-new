@@ -545,7 +545,8 @@ namespace HaCreator.WzStructure
                 {
                     if (!GetMapVR(mapImage, ref info.VR))
                     {
-                        MessageBox.Show("Error - map does not contain size information and HaCreator was unable to generate it. An error has been logged.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        new GUI.ErrorBox("Error - map does not contain size information and HaCreator was unable to generate it. An error has been logged.");
+                        //MessageBox.Show("Error - map does not contain size information and HaCreator was unable to generate it. An error has been logged.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         ErrorLogger.Log(ErrorLevel.IncorrectStructure, "no size @map " + info.id.ToString());
                         return;
                     }

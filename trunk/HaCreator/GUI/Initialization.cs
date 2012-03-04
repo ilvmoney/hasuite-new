@@ -34,7 +34,7 @@ namespace HaCreator.GUI
         {
             InitializeComponent();
             styleManager.ManagerStyle = UserSettings.applicationStyle;
-            this.Text += Program.version;
+            this.Text += " " + Program.version;
         }
 
         public static bool XNASelfCheck(ref string exceptionResult)

@@ -49,7 +49,7 @@
             this.reflectionImage1.BackgroundStyle.Class = "";
             this.reflectionImage1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.reflectionImage1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.reflectionImage1.Image = global::HaCreator.Properties.Resources.sleep_3;
+            this.reflectionImage1.Image = global::HaCreator.Properties.Resources.no_3;
             this.reflectionImage1.Location = new System.Drawing.Point(0, 0);
             this.reflectionImage1.Name = "reflectionImage1";
             this.reflectionImage1.Size = new System.Drawing.Size(99, 111);
@@ -83,6 +83,7 @@
             this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.buttonX1.TabIndex = 2;
             this.buttonX1.Text = "Yes";
+            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
             // 
             // buttonX2
             // 
@@ -115,6 +116,7 @@
             this.Name = "YesNoBox";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Title";
+            this.Load += new System.EventHandler(this.YesNoBox_Load);
             this.ResumeLayout(false);
 
         }
