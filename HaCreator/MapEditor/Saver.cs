@@ -89,7 +89,8 @@ namespace HaCreator.MapEditor
         public /*WzSubProperty*/ void AddMapObj(WzSubProperty objParent, String name, LayeredItem boardObj)
         {
             WzSubProperty newObj = new WzSubProperty(name);
-            newObj.Parent = objParent;
+            //newObj.Parent = objParent;
+            objParent.AddProperty(newObj);
             newObj.AddProperty(new WzStringProperty("oS", ((ObjectInfo)boardObj.BaseInfo).oS));
             newObj.AddProperty(new WzStringProperty("l0", ((ObjectInfo)boardObj.BaseInfo).l0));
             newObj.AddProperty(new WzStringProperty("l1", ((ObjectInfo)boardObj.BaseInfo).l1));
@@ -111,7 +112,8 @@ namespace HaCreator.MapEditor
         public /*WzSubProperty*/ void AddMapTile(WzSubProperty tileParent, String name, LayeredItem boardTile)
         {
             WzSubProperty newObj = new WzSubProperty(name);
-            newObj.Parent = tileParent;
+            //newObj.Parent = tileParent;
+            tileParent.AddProperty(newObj);
             if (((WzSubProperty)tileParent.Parent)["info"]["tS"] == null)
                 ((WzSubProperty)((WzSubProperty)tileParent.Parent)["info"]).AddProperty(new WzStringProperty("tS", ((TileInfo)boardTile.BaseInfo).tS));
             else

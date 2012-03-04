@@ -42,7 +42,8 @@ namespace HaCreator.MapEditor
             }
             catch (Exception WTFBBQ)
             {
-                MessageBox.Show("I don't even....how the hell does this scew up?! This is the shit: " + WTFBBQ.Message, "WTFBBQ?!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("I don't even....how the hell does this scew up?! This is the shit: " + WTFBBQ.Message, "WTFBBQ?!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                new GUI.ErrorBox("I don't even....how the hell does this scew up?! This is the shit: " + WTFBBQ.Message);
                 return "ERROR";
             }
         }
@@ -62,7 +63,8 @@ namespace HaCreator.MapEditor
             }
             catch (Exception e)
             {
-                MessageBox.Show("Error initializing " + name + ".wz (" + e.Message + ").\r\nCheck that the directory is valid and the file is not in use.");
+                //MessageBox.Show("Error initializing " + name + ".wz (" + e.Message + ").\r\nCheck that the directory is valid and the file is not in use.");
+                new GUI.ErrorBox("Error initializing " + name + ".wz (" + e.Message + ").\r\nCheck that the directory is valid and the file is not in use.");
                 return false;
             }
         }
@@ -90,7 +92,8 @@ namespace HaCreator.MapEditor
             }
             catch (Exception WTFBBQ)
             {
-                MessageBox.Show("WTFBBQ!? I was just minding my own business, saving Map.wz to '" + path + "', when all the sudden... BAM! " + WTFBBQ.Message + ". Ain't that a trip?", "WTFBBQ?!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("WTFBBQ!? I was just minding my own business, saving Map.wz to '" + path + "', when all the sudden... BAM! " + WTFBBQ.Message + ". Ain't that a trip?", "WTFBBQ?!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                new GUI.ErrorBox("I was just minding my own business, saving Map.wz to '" + path + "', when all the sudden... BAM! " + WTFBBQ.Message + ". Ain't that a trip?");
                 return false;
             }
         }

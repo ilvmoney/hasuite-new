@@ -162,7 +162,9 @@ namespace HaCreator.GUI
         #region Form Events
         private void Editor_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("Are you sure you want to quit?", "Quit", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            Form msgbox = new GUI.YesNoBox("Quit", "Are you sure you want to quit?");
+            //if (MessageBox.Show("Are you sure you want to quit?", "Quit", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (msgbox.DialogResult == DialogResult.Yes)
             {
                 if (multiBoard.SelectedBoard.Mouse.State != MouseState.Selection)
                 {
@@ -309,10 +311,13 @@ namespace HaCreator.GUI
         private void regenMinimap_Click(object sender, EventArgs e)
         {
             if (multiBoard.SelectedBoard.RegenerateMinimap())
-                MessageBox.Show("Minimap regenerated successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                new GUI.InfoMsgBox("Success", "Minimap regenerated successfully");
+            //MessageBox.Show("Minimap regenerated successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
             {
-                MessageBox.Show("An error occured during minimap regeneration. The error has been logged. If possible, save the map and send it to haha01haha01@gmail.com", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("An error occured during minimap regeneration. The error has been logged. If possible, save the map and send it to haha01haha01@gmail.com", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                new GUI.ErrorBox("An error occured during minimap regeneration. The error has been logged. If possible, save the map and send it to haha01haha01@gmail.com");
+                //Should I keep it as 'haha01haha01@gmail.com' for the person to contact? -DeathRight
                 ErrorLogger.Log(ErrorLevel.Critical, "error regenning minimap for map " + multiBoard.SelectedBoard.MapInfo.id.ToString());
             }
         }
@@ -352,7 +357,9 @@ namespace HaCreator.GUI
             int oldLayer;
             if (multiBoard.SelectedBoard.SelectedItems.Count > 0 && LayeredItemsSelected(out oldLayer))
             {
-                if (UserSettings.suppressWarnings || MessageBox.Show("Are you sure you want to move these items from layer " + oldLayer.ToString() + " to " + layersComboBox.SelectedIndex.ToString() + "?\r\n", "Cross-Layer Operation", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question) != System.Windows.Forms.DialogResult.Yes)
+                Form msgbx = new GUI.YesNoBox("Cross-Layer Operation", "Are you sure you want to move these items from layer " + oldLayer.ToString() + " to " + layersComboBox.SelectedIndex.ToString() + "?\r\n");
+                                                //   MessageBox.Show("Are you sure you want to move these items from layer " + oldLayer.ToString() + " to " + layersComboBox.SelectedIndex.ToString() + "?\r\n", "Cross-Layer Operation", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question)
+                if (UserSettings.suppressWarnings || msgbx.DialogResult != System.Windows.Forms.DialogResult.Yes)
                 {
                     InputHandler.ClearSelectedItems(multiBoard.SelectedBoard);
                     SetLayer();
@@ -361,7 +368,8 @@ namespace HaCreator.GUI
                 Layer targetLayer = multiBoard.SelectedBoard.Layers[layersComboBox.SelectedIndex];
                 if (!LayerCapableOfHoldingSelectedItems(targetLayer))
                 {
-                    MessageBox.Show("Error: Target layer cannot hold the selected items because they contain tiles with a tS different from the layer's", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //MessageBox.Show("Error: Target layer cannot hold the selected items because they contain tiles with a tS different from the layer's", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    new GUI.ErrorBox("Target layer cannot hold the selected items because they contain tiles with a tile source different from the layer's.");
                     return;
                 }
                 List<IContainsLayerInfo> items = new List<IContainsLayerInfo>();
@@ -429,7 +437,8 @@ namespace HaCreator.GUI
                     infoToAdd = (TileInfo)((KoolkLVItem)sender).Tag;
                 if (infoToAdd.tS != layer.tS)
                 {
-                    MessageBox.Show("Error: layer tS already set to a different tS.\r\nPlease choose a different layer.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //MessageBox.Show("Error: layer tS already set to a different tS.\r\nPlease choose a different layer.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    new GUI.ErrorBox("layer tS already set to a different tS.\r\nPlease choose a different layer.");
                     allLayersBox.Enabled = true;
                     if (prevLayerNum == -1) allLayersBox.Checked = true;
                     else layersComboBox.SelectedIndex = prevLayerNum;
@@ -742,7 +751,9 @@ namespace HaCreator.GUI
 
         private void Tabs_PageClosing(TabPages.TabPage page, ref bool cancel)
         {
-            if (MessageBox.Show("Are you sure you want to close this map?", "Close", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes)
+            Form msgbx = new GUI.YesNoBox("Close", "Are you sure you want to close this map?");
+            //  MessageBox.Show("Are you sure you want to close this map?", "Close", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+            if (msgbx.DialogResult != DialogResult.Yes)
                 cancel = true;
         }
 
@@ -925,7 +936,8 @@ namespace HaCreator.GUI
                 else if ((editedTypes & type) != type && (visibleTypes & type) != type) checkBox.CheckState = CheckState.Unchecked;
                 else
                 {
-                    MessageBox.Show("Unknown check state, using default");
+                    //MessageBox.Show("Unknown check state, using default");
+                    new GUI.InfoMsgBox("Unknown check state", "Unknown check state, using default");
                     checkBox.CheckState = CheckState.Checked;
                 }
             }

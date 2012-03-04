@@ -50,7 +50,7 @@ namespace MapleLib.WzLib.WzProperties
 		/// <summary>
 		/// The parent of the object
 		/// </summary>
-		public override IWzObject Parent { get { return parent; } internal set { parent = value; } }
+        public override IWzObject Parent { get { return parent; } internal set { parent = value; } }
 /*		/// <summary>
 		/// The image that this property is contained in
 		/// </summary>

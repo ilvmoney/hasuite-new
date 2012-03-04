@@ -43,6 +43,7 @@ namespace MapleLib.WzLib
 		/// Returns the parent object
 		/// </summary>
 		public abstract IWzObject Parent { get; internal set; }
+
         /// <summary>
         /// Returns the parent WZ File
         /// </summary>

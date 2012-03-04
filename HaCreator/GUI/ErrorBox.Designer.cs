@@ -66,14 +66,16 @@
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(286, 103);
             this.labelX1.TabIndex = 3;
-            this.labelX1.Text = "You did something wrong... What did you do wrong!?";
             this.labelX1.TextAlignment = System.Drawing.StringAlignment.Center;
             this.labelX1.WordWrap = true;
+            this.labelX1.Click += new System.EventHandler(this.labelX1_Click);
             // 
             // ErrorBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(345, 103);
             this.Controls.Add(this.labelX1);
             this.Controls.Add(this.reflectionImage1);
@@ -85,7 +87,7 @@
             this.MinimizeBox = false;
             this.Name = "ErrorBox";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "What did you do?!";
+            this.Text = "WTFBBQ";
             this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.Transparent;
             this.Load += new System.EventHandler(this.ErrorBox_Load);
