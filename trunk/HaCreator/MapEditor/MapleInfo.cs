@@ -363,14 +363,16 @@ namespace HaCreator.MapEditor
         private string _tS;
         private string _u;
         private string _no;
+        private int _noInt;
         private List<XNA.Point> footholdOffsets = new List<XNA.Point>();
 
-        public TileInfo(Bitmap image, System.Drawing.Point origin, string tS, string u, string no, IWzObject parentObject)
+        public TileInfo(Bitmap image, System.Drawing.Point origin, string tS, string u, string no, IWzObject parentObject, int noInt = -1)
             : base(image, origin, parentObject)
         {
             this._tS = tS;
             this._u = u;
             this._no = no;
+            this._noInt = noInt;
         }
 
         public static TileInfo Load(WzCanvasProperty parentObject)
@@ -379,9 +381,9 @@ namespace HaCreator.MapEditor
             return Load(parentObject,WzInfoTools.RemoveExtension(path[path.Length - 3]), path[path.Length - 2], path[path.Length - 1]);
         }
 
-        public static TileInfo Load(WzCanvasProperty parentObject, string tS, string u, string no)
+        public static TileInfo Load(WzCanvasProperty parentObject, string tS, string u, string no, int noInt = -1)
         {
-            TileInfo result = new TileInfo(parentObject.PngProperty.GetPNG(false), WzInfoTools.VectorToSystemPoint((WzVectorProperty)parentObject["origin"]), tS,u,no, parentObject);
+            TileInfo result = new TileInfo(parentObject.PngProperty.GetPNG(false), WzInfoTools.VectorToSystemPoint((WzVectorProperty)parentObject["origin"]), tS,u,no, parentObject, noInt);
             WzConvexProperty footholds = (WzConvexProperty)parentObject["foothold"];
             if (footholds != null)
                 foreach (WzVectorProperty foothold in footholds.WzProperties)
@@ -467,6 +469,18 @@ namespace HaCreator.MapEditor
             set
             {
                 this._no = value;
+            }
+        }
+
+        public int noInt
+        {
+            get
+            {
+                return _noInt;
+            }
+            set
+            {
+                this._noInt = value;
             }
         }
 

@@ -220,15 +220,26 @@ namespace MapleLib.WzLib
             }
         }
         /// <summary>
-        /// Removes a property by name
+        /// Removes a property from the image
         /// </summary>
-        /// <param name="name">The name of the property to remove</param>
+        /// <param name="prop">Property to remove</param>
         public void RemoveProperty(IWzImageProperty prop)
         {
             if (reader != null && !parsed) ParseImage();
             prop.Parent = null;
             properties.Remove(prop);
         }
+
+        /// <summary>
+        /// Removes a property by name
+        /// </summary>
+        /// <param name="name">Name of the property to remove</param>
+        public void RemoveProperty(string name)
+        {
+            if (this[name] != null)
+                RemoveProperty(this[name]);
+        }
+
         public void ClearProperties()
         {
             foreach (IWzImageProperty prop in properties) prop.Parent = null;

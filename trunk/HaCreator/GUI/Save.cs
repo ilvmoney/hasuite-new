@@ -19,6 +19,7 @@ namespace HaCreator.GUI
             InitializeComponent();
             styleManager.ManagerStyle = UserSettings.applicationStyle;
             this.multiBoard = multiBoard;
+            label1.Text = "This will save Map.wz to:/r/n '" + Program.WzManager.getWzPath() + "\\EdittedWZ'/r/nMake a copy of your current Map.wz";
         }
 
         private void Save_Load(object sender, EventArgs e)
@@ -46,6 +47,7 @@ namespace HaCreator.GUI
                     progressBar1.Enabled = true;
                     progressBar1.PerformStep(); //10%
                     progressBar1.Refresh();
+                    MapEditor.Saver.WriteToMap(multiBoard.SelectedBoard);
                     Program.WzManager.SaveMap(Program.WzManager.getWzPath() + "\\EdittedWZ", multiBoard.SelectedBoard.MapInfo.mapImage, progressBar1);
                     //MessageBox.Show("Save completed!", "Completed", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     new GUI.InfoMsgBox("Completed", "Save completed!");
