@@ -140,6 +140,15 @@ namespace HaCreator.MapEditor
             }
         }
 
+        /// <summary>
+        /// Gets the layer number
+        /// </summary>
+        /// <returns>The LayerNumber</returns>
+        public int GetLayer()
+        {
+            return ((FootholdAnchor)this).LayerNumber;
+        }
+
         public delegate void OnPointMovedDelegate();
         public event OnPointMovedDelegate PointMoved;
     }
@@ -477,6 +486,7 @@ namespace HaCreator.MapEditor
         private int? _piece;
         private int? _force;
         private string name = "";
+        private fhGroup group;
 
         //temporary variables:
         public FootholdLine cloneLine = null;
@@ -586,6 +596,10 @@ namespace HaCreator.MapEditor
         public MapleBool ForbidFallDown { get { return _forbidFallDown; } set { _forbidFallDown = value; } }
         public MapleBool CantThrough { get { return _cantThrough; } set { _cantThrough = value; } }
         public string Name { get { return name; } set { name = value; } }
+        /// <summary>
+        /// Group that this line is contained in.
+        /// </summary>
+        public fhGroup Group { get { return group; } set { group = value; } }
 
         public int num; //temporary, for saving.
     }

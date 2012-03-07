@@ -160,7 +160,11 @@ namespace HaCreator.WzStructure
                     if (questParent != null)
                         foreach (WzCompressedIntProperty info in questParent.WzProperties)
                             questInfo.Add(new ObjectInstanceQuest(int.Parse(info.Name), (QuestState)info.Value));
-                    bool flip = InfoTool.GetBool(obj["f"]);
+                    bool flip = false; //Lol idk what else to do with this. -DeathRight
+                    if (obj["f"] != null)
+                    {
+                        flip = InfoTool.GetBool(obj["f"]);
+                    }
                     IWzImageProperty objInfoProp = Program.InfoManager.ObjectSets[oS][l0][l1][l2];
                     if (objInfoProp.HCTag == null)
                         objInfoProp.HCTag = ObjectInfo.Load((WzSubProperty)objInfoProp, oS, l0, l1, l2);
@@ -180,7 +184,7 @@ namespace HaCreator.WzStructure
                     int no = InfoTool.GetInt(tile["no"]);
                     IWzImageProperty tileInfoProp = Program.InfoManager.TileSets[tS][u][no.ToString()];
                     if (tileInfoProp.HCTag == null)
-                        tileInfoProp.HCTag = TileInfo.Load((WzCanvasProperty)tileInfoProp, tS, u, no.ToString());
+                        tileInfoProp.HCTag = TileInfo.Load((WzCanvasProperty)tileInfoProp, tS, u, no.ToString(), no);
                     TileInfo tileInfo = (TileInfo)tileInfoProp.HCTag;
                     mapBoard.BoardItems.TileObjs.Add((LayeredItem)tileInfo.CreateInstance(mapBoard.Layers[layer], mapBoard, x, y, i /*zM*/, false, false, false, realName));
                 }

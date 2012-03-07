@@ -29,9 +29,31 @@ namespace HaCreator.MapEditor
         int LayerNumber { get; set; }
     }
 
+    /// <summary>
+    /// Foothold group
+    /// </summary>
+    public class fhGroup
+    {
+        private Layer layer;
+        /// <summary>
+        /// Lines that are connected to this group.
+        /// </summary>
+        public List<FootholdLine> Lines = new List<FootholdLine>();
+
+        /// <summary>
+        /// The layer this group is under
+        /// </summary>
+        public Layer groupLayer
+        {
+            get { return layer; }
+            set { layer = value; }
+        }
+    }
+
     public class Layer
     {
         private List<LayeredItem> items = new List<LayeredItem>(); //needed?
+        public List<int> fhGroups = new List<int>();
         private int num;
         private Board board;
         private string _tS = null;
