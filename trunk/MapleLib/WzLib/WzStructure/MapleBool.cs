@@ -21,6 +21,9 @@ using System.Text;
 
 namespace MapleLib.WzLib.WzStructure
 {
+    /// <summary>
+    /// A type that is used to have a bool value in a WzCompressedIntProperty, Null is 0, False is 1, True is 2
+    /// </summary>
     public struct MapleBool //I know I could have used the nullable bool.
     {
         public static readonly byte NotExist = 0;
@@ -47,6 +50,13 @@ namespace MapleLib.WzLib.WzStructure
         public static implicit operator bool(MapleBool value)
         {
             return value == MapleBool.True;
+        }
+
+        public static implicit operator byte(MapleBool value)
+        {
+            if (value == MapleBool.True) return MapleBool.True;
+            else if (value == MapleBool.False) return MapleBool.False;
+            else return MapleBool.NotExist;
         }
 
         public override bool Equals(object obj)
