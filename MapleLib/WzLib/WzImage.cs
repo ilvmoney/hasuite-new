@@ -100,7 +100,26 @@ namespace MapleLib.WzLib
         /// <summary>
         /// Was the image changed
         /// </summary>
-        public bool Changed { get { return changed; } set { changed = value; } }
+        public bool Changed
+        {
+            get { return changed; }
+            set
+            {
+                changed = value;
+                if (this["Changed"] != null)
+                {
+                    if (this["Changed"].PropertyType == WzPropertyType.CompressedInt)
+                    {
+                        ((WzCompressedIntProperty)this["Changed"]).Value = (int)((WzStructure.MapleBool)value);
+                    }
+                    else
+                    {
+                        this.AddProperty(new WzCompressedIntProperty("Changed", (int)((WzStructure.MapleBool)value)));
+                    }
+                }
+                else this.AddProperty(new WzCompressedIntProperty("Changed", (int)((WzStructure.MapleBool)value)));
+            }
+        }
 		/// <summary>
 		/// The size in the wz file of the image
 		/// </summary>

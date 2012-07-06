@@ -81,7 +81,7 @@
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
-    <Win32Resource>C:\Users\Travis\Desktop\hasuite-new\ResourceTemplate.res</Win32Resource>
+    <Win32Resource>..\ResourceTemplate.res</Win32Resource>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <DebugSymbols>true</DebugSymbols>
