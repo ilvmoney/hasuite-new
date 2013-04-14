@@ -509,10 +509,10 @@ namespace HaCreator.WzStructure
                 int cy = InfoTool.GetInt(bgProp["cy"]);
                 int a = InfoTool.GetInt(bgProp["a"]);
                 BackgroundType type = (BackgroundType)InfoTool.GetInt(bgProp["type"]);
-                bool front = InfoTool.GetBool(bgProp["front"]);
-                bool flip = InfoTool.GetBool(bgProp["f"]);
+                bool front = (MapleBool)((WzCompressedIntProperty)bgProp["front"]).Value;
+                bool flip = (MapleBool)((WzCompressedIntProperty)bgProp["f"]).Value;
                 string bS = InfoTool.GetString(bgProp["bS"]);
-                bool ani = InfoTool.GetBool(bgProp["ani"]);
+                bool ani = (MapleBool)((WzCompressedIntProperty)bgProp["ani"]).Value;
                 string no = InfoTool.GetInt(bgProp["no"]).ToString();
                 WzImage bsImg = Program.InfoManager.BackgroundSets[bS];
                 if (bsImg == null) continue;

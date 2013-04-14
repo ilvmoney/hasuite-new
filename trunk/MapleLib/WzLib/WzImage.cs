@@ -106,6 +106,7 @@ namespace MapleLib.WzLib
             set
             {
                 changed = value;
+                /*
                 if (this["Changed"] != null)
                 {
                     if (this["Changed"].PropertyType == WzPropertyType.CompressedInt)
@@ -118,6 +119,7 @@ namespace MapleLib.WzLib
                     }
                 }
                 else this.AddProperty(new WzCompressedIntProperty("Changed", (int)((WzStructure.MapleBool)value)));
+                */
             }
         }
 		/// <summary>

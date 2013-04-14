@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using HaCreator.MapEditor;
+using System.IO;
 
 namespace HaCreator.GUI
 {
@@ -19,7 +20,7 @@ namespace HaCreator.GUI
             InitializeComponent();
             styleManager.ManagerStyle = UserSettings.applicationStyle;
             this.multiBoard = multiBoard;
-            label1.Text = "This will save Map.wz to:/r/n '" + Program.WzManager.getWzPath() + "\\EdittedWZ'/r/nMake a copy of your current Map.wz";
+            label1.Text = "This will save Map.wz to:\r\n'" + Program.WzManager.getWzPath() + "\\EdittedWZ' (Please make sure that the directory exists)";
         }
 
         private void Save_Load(object sender, EventArgs e)
@@ -47,7 +48,17 @@ namespace HaCreator.GUI
                     progressBar1.Enabled = true;
                     progressBar1.PerformStep(); //10%
                     progressBar1.Refresh();
-                    MapEditor.Saver.WriteToMap(multiBoard.SelectedBoard);
+                    if (MapEditor.Saver.WriteToMap(multiBoard.SelectedBoard) == "cancel")
+                    {
+                        progressBar1.Value = progressBar1.Minimum;
+                        progressBar1.Refresh();
+                        progressBar1.Update();
+                        return;
+                    }
+                    if (!Directory.Exists(Program.WzManager.getWzPath() + "\\EdittedWZ"))
+                    {
+                        DirectoryInfo di = Directory.CreateDirectory(Program.WzManager.getWzPath() + "\\EdittedWZ");
+                    }
                     Program.WzManager.SaveMap(Program.WzManager.getWzPath() + "\\EdittedWZ", multiBoard.SelectedBoard.MapInfo.mapImage, progressBar1);
                     //MessageBox.Show("Save completed!", "Completed", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     new GUI.InfoMsgBox("Completed", "Save completed!");
