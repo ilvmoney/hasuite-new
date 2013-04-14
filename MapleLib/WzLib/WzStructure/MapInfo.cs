@@ -61,16 +61,16 @@ namespace MapleLib.WzLib.WzStructure
                         bgm = InfoTool.GetString(prop);
                         break;
                     case "cloud":
-                        cloud = InfoTool.GetBool(prop);
+                        cloud = (MapleBool)((WzCompressedIntProperty)prop).Value;
                         break;
                     case "swim":
-                        swim = InfoTool.GetBool(prop);
+                        swim = (MapleBool)((WzCompressedIntProperty)prop).Value;
                         break;
                     case "forcedReturn":
                         forcedReturn = InfoTool.GetInt(prop);
                         break;
                     case "hideMinimap":
-                        hideMinimap = InfoTool.GetBool(prop);
+                        hideMinimap = (MapleBool)((WzCompressedIntProperty)prop).Value;
                         break;
                     case "mapDesc":
                         mapDesc = InfoTool.GetString(prop);
@@ -88,7 +88,7 @@ namespace MapleLib.WzLib.WzStructure
                         returnMap = InfoTool.GetInt(prop);
                         break;
                     case "town":
-                        town = InfoTool.GetBool(prop);
+                        town = (MapleBool)((WzCompressedIntProperty)prop).Value;
                         break;
                     case "version":
                         version = InfoTool.GetInt(prop);
@@ -120,13 +120,13 @@ namespace MapleLib.WzLib.WzStructure
                         onUserEnter = InfoTool.GetString(prop);
                         break;
                     case "fly":
-                        fly = InfoTool.GetBool(prop);
+                        fly = (MapleBool)((WzCompressedIntProperty)prop).Value;
                         break;
                     case "noMapCmd":
-                        noMapCmd = InfoTool.GetBool(prop);
+                        noMapCmd = (MapleBool)((WzCompressedIntProperty)prop).Value;
                         break;
                     case "partyOnly":
-                        partyOnly = InfoTool.GetBool(prop);
+                        partyOnly = (MapleBool)((WzCompressedIntProperty)prop).Value;
                         break;
                     case "fieldType":
                         int ft = InfoTool.GetInt(prop);
@@ -135,19 +135,19 @@ namespace MapleLib.WzLib.WzStructure
                         fieldType = (FieldType)ft;
                         break;
                     case "miniMapOnOff":
-                        miniMapOnOff = InfoTool.GetBool(prop);
+                        miniMapOnOff = (MapleBool)((WzCompressedIntProperty)prop).Value;
                         break;
                     case "reactorShuffle":
-                        reactorShuffle = InfoTool.GetBool(prop);
+                        reactorShuffle = (MapleBool)((WzCompressedIntProperty)prop).Value;
                         break;
                     case "reactorShuffleName":
                         reactorShuffleName = InfoTool.GetString(prop);
                         break;
                     case "personalShop":
-                        personalShop = InfoTool.GetBool(prop);
+                        personalShop = (MapleBool)((WzCompressedIntProperty)prop).Value;
                         break;
                     case "entrustedShop":
-                        entrustedShop = InfoTool.GetBool(prop);
+                        entrustedShop = (MapleBool)((WzCompressedIntProperty)prop).Value;
                         break;
                     case "effect":
                         effect = InfoTool.GetString(prop);
@@ -174,10 +174,10 @@ namespace MapleLib.WzLib.WzStructure
                         help = InfoTool.GetString(prop);
                         break;
                     case "snow":
-                        snow = InfoTool.GetBool(prop);
+                        snow = (MapleBool)((WzCompressedIntProperty)prop).Value;
                         break;
                     case "rain":
-                        rain = InfoTool.GetBool(prop);
+                        rain = (MapleBool)((WzCompressedIntProperty)prop).Value;
                         break;
                     case "dropExpire":
                         dropExpire = InfoTool.GetInt(prop);
@@ -204,7 +204,7 @@ namespace MapleLib.WzLib.WzStructure
                             autoLieDetector = new AutoLieDetector((int)startHour, (int)endHour, (int)interval, (int)propInt);
                         break;
                     case "expeditionOnly":
-                        expeditionOnly = InfoTool.GetBool(prop);
+                        expeditionOnly = (MapleBool)((WzCompressedIntProperty)prop).Value;
                         break;
                     case "fs":
                         fs = InfoTool.GetFloat(prop);
@@ -222,7 +222,7 @@ namespace MapleLib.WzLib.WzStructure
                         streetName = InfoTool.GetString(prop);
                         break;
                     case "noRegenMap":
-                        noRegenMap = InfoTool.GetBool(prop);
+                        noRegenMap = (MapleBool)((WzCompressedIntProperty)prop).Value;
                         break;
                     case "allowedItems":
                         allowedItems = new List<int>();
@@ -234,34 +234,34 @@ namespace MapleLib.WzLib.WzStructure
                         recovery = InfoTool.GetFloat(prop);
                         break;
                     case "blockPBossChange":
-                        blockPBossChange = InfoTool.GetBool(prop);
+                        blockPBossChange = (MapleBool)((WzCompressedIntProperty)prop).Value;
                         break;
                     case "everlast":
-                        everlast = InfoTool.GetBool(prop);
+                        everlast = (MapleBool)((WzCompressedIntProperty)prop).Value;
                         break;
                     case "damageCheckFree":
-                        damageCheckFree = InfoTool.GetBool(prop);
+                        damageCheckFree = (MapleBool)((WzCompressedIntProperty)prop).Value;
                         break;
                     case "dropRate":
                         dropRate = InfoTool.GetFloat(prop);
                         break;
                     case "scrollDisable":
-                        scrollDisable = InfoTool.GetBool(prop);
+                        scrollDisable = (MapleBool)((WzCompressedIntProperty)prop).Value;
                         break;
                     case "needSkillForFly":
-                        needSkillForFly = InfoTool.GetBool(prop);
+                        needSkillForFly = (MapleBool)((WzCompressedIntProperty)prop).Value;
                         break;
                     case "zakum2Hack":
-                        zakum2Hack = InfoTool.GetBool(prop);
+                        zakum2Hack = (MapleBool)((WzCompressedIntProperty)prop).Value;
                         break;
                     case "allMoveCheck":
-                        allMoveCheck = InfoTool.GetBool(prop);
+                        allMoveCheck = (MapleBool)((WzCompressedIntProperty)prop).Value;
                         break;
                     case "VRLimit":
-                        VRLimit = InfoTool.GetBool(prop);
+                        VRLimit = (MapleBool)((WzCompressedIntProperty)prop).Value;
                         break;
                     case "consumeItemCoolTime":
-                        consumeItemCoolTime = InfoTool.GetBool(prop);
+                        consumeItemCoolTime = (MapleBool)((WzCompressedIntProperty)prop).Value;
                         break;
                     default:
                         additionalProps.Add(prop);

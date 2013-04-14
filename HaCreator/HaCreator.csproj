@@ -225,6 +225,12 @@
     <Compile Include="GUI\ErrorBox.Designer.cs">
       <DependentUpon>ErrorBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\VREditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\VREditor.Designer.cs">
+      <DependentUpon>VREditor.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\YesNoBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -389,6 +395,9 @@
       <DependentUpon>ExceptionHandler.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\VREditor.resx">
+      <DependentUpon>VREditor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\YesNoBox.resx">
       <DependentUpon>YesNoBox.cs</DependentUpon>
     </EmbeddedResource>
@@ -552,6 +561,10 @@
     <None Include="Resources\Sharingan32.png" />
     <None Include="Resources\Sharingan60.png" />
     <None Include="Resources\help_icon.png" />
+    <None Include="Resources\arrow-down.png" />
+    <None Include="Resources\arrow-left.png" />
+    <None Include="Resources\arrow-right.png" />
+    <None Include="Resources\arrow-up.png" />
     <Content Include="Resources\MascotSprites\angry_0.png" />
     <Content Include="Resources\MascotSprites\angry_1.png" />
     <Content Include="Resources\MascotSprites\angry_2.png" />

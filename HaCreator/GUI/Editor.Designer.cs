@@ -41,7 +41,6 @@
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.tileBrowse = new System.Windows.Forms.Button();
             this.tileSetList = new System.Windows.Forms.ListBox();
-            this.tileImagesContainer = new HaCreator.KoolkLVContainer();
             this.panelDockContainer2 = new DevComponents.DotNetBar.PanelDockContainer();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.splitContainer4 = new System.Windows.Forms.SplitContainer();
@@ -49,14 +48,12 @@
             this.objL0ListBox = new System.Windows.Forms.ListBox();
             this.splitContainer5 = new System.Windows.Forms.SplitContainer();
             this.objL1ListBox = new System.Windows.Forms.ListBox();
-            this.objImagesContainer = new HaCreator.KoolkLVContainer();
             this.panelDockContainer3 = new DevComponents.DotNetBar.PanelDockContainer();
             this.splitContainer6 = new System.Windows.Forms.SplitContainer();
             this.splitContainer7 = new System.Windows.Forms.SplitContainer();
             this.bgSetListBox = new System.Windows.Forms.ListBox();
             this.bgBack = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.aniBg = new DevComponents.DotNetBar.Controls.CheckBoxX();
-            this.bgImageContainer = new HaCreator.KoolkLVContainer();
             this.panelDockContainer4 = new DevComponents.DotNetBar.PanelDockContainer();
             this.splitContainer8 = new System.Windows.Forms.SplitContainer();
             this.splitContainer9 = new System.Windows.Forms.SplitContainer();
@@ -66,11 +63,8 @@
             this.npcRButton = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.reactorRButton = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.lifeListBox = new System.Windows.Forms.ListBox();
-            this.lifePictureBox = new System.Windows.Forms.PictureBox();
             this.panelDockContainer5 = new DevComponents.DotNetBar.PanelDockContainer();
-            this.portalImageContainer = new HaCreator.KoolkLVContainer();
             this.panelDockContainer6 = new DevComponents.DotNetBar.PanelDockContainer();
-            this.miscItemsContainer = new HaCreator.KoolkLVContainer();
             this.tileDockBox = new DevComponents.DotNetBar.DockContainerItem();
             this.objsDockBox = new DevComponents.DotNetBar.DockContainerItem();
             this.bgDockBox = new DevComponents.DotNetBar.DockContainerItem();
@@ -83,6 +77,10 @@
             this.dockSite7 = new DevComponents.DotNetBar.DockSite();
             this.dockSite3 = new DevComponents.DotNetBar.DockSite();
             this.ribbonControl = new DevComponents.DotNetBar.RibbonControl();
+            this.ribbonPanel1 = new DevComponents.DotNetBar.RibbonPanel();
+            this.ribbonBar5 = new DevComponents.DotNetBar.RibbonBar();
+            this.ribbonBar3 = new DevComponents.DotNetBar.RibbonBar();
+            this.itemContainer6 = new DevComponents.DotNetBar.ItemContainer();
             this.ribbonPanel2 = new DevComponents.DotNetBar.RibbonPanel();
             this.ribbonBar4 = new DevComponents.DotNetBar.RibbonBar();
             this.itemContainer8 = new DevComponents.DotNetBar.ItemContainer();
@@ -98,9 +96,6 @@
             this.allLayersBox = new DevComponents.DotNetBar.CheckBoxItem();
             this.ribbonBar2 = new DevComponents.DotNetBar.RibbonBar();
             this.itemContainer7 = new DevComponents.DotNetBar.ItemContainer();
-            this.showVR = new DevComponents.DotNetBar.ButtonItem();
-            this.showMinimap = new DevComponents.DotNetBar.ButtonItem();
-            this.emulateParallax = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar1 = new DevComponents.DotNetBar.RibbonBar();
             this.itemContainer5 = new DevComponents.DotNetBar.ItemContainer();
             this.viewTiles = new DevComponents.DotNetBar.CheckBoxItem();
@@ -115,16 +110,22 @@
             this.viewSeats = new DevComponents.DotNetBar.CheckBoxItem();
             this.viewTooltips = new DevComponents.DotNetBar.CheckBoxItem();
             this.viewBackgrounds = new DevComponents.DotNetBar.CheckBoxItem();
-            this.ribbonPanel1 = new DevComponents.DotNetBar.RibbonPanel();
-            this.ribbonBar3 = new DevComponents.DotNetBar.RibbonBar();
-            this.itemContainer6 = new DevComponents.DotNetBar.ItemContainer();
-            this.settingsButton = new DevComponents.DotNetBar.ButtonItem();
-            this.mapSimulatorButton = new DevComponents.DotNetBar.ButtonItem();
-            this.regenMinimap = new DevComponents.DotNetBar.ButtonItem();
-            this.snapButton = new DevComponents.DotNetBar.ButtonItem();
-            this.randomTiles = new DevComponents.DotNetBar.ButtonItem();
             this.viewTab = new DevComponents.DotNetBar.RibbonTabItem();
             this.toolsTab = new DevComponents.DotNetBar.RibbonTabItem();
+            this.statusStrip = new System.Windows.Forms.ToolStrip();
+            this.cordsLabel = new System.Windows.Forms.ToolStripLabel();
+            this.itemDescLabel = new System.Windows.Forms.ToolStripLabel();
+            this.multiBoard = new HaCreator.MapEditor.MultiBoard();
+            this.Tabs = new TabPages.PageCollection();
+            this.mapSimulator = new DevComponents.DotNetBar.ButtonItem();
+            this.regenMinimap = new DevComponents.DotNetBar.ButtonItem();
+            this.VREdit = new DevComponents.DotNetBar.ButtonItem();
+            this.settingsButton = new DevComponents.DotNetBar.ButtonItem();
+            this.snapButton = new DevComponents.DotNetBar.ButtonItem();
+            this.randomTiles = new DevComponents.DotNetBar.ButtonItem();
+            this.showVR = new DevComponents.DotNetBar.ButtonItem();
+            this.showMinimap = new DevComponents.DotNetBar.ButtonItem();
+            this.emulateParallax = new DevComponents.DotNetBar.ButtonItem();
             this.office2007StartButton1 = new DevComponents.DotNetBar.Office2007StartButton();
             this.itemContainer1 = new DevComponents.DotNetBar.ItemContainer();
             this.itemContainer2 = new DevComponents.DotNetBar.ItemContainer();
@@ -139,11 +140,12 @@
             this.exitButton = new DevComponents.DotNetBar.ButtonItem();
             this.undoButton = new DevComponents.DotNetBar.ButtonItem();
             this.redoButton = new DevComponents.DotNetBar.ButtonItem();
-            this.statusStrip = new System.Windows.Forms.ToolStrip();
-            this.cordsLabel = new System.Windows.Forms.ToolStripLabel();
-            this.itemDescLabel = new System.Windows.Forms.ToolStripLabel();
-            this.multiBoard = new HaCreator.MapEditor.MultiBoard();
-            this.Tabs = new TabPages.PageCollection();
+            this.tileImagesContainer = new HaCreator.KoolkLVContainer();
+            this.objImagesContainer = new HaCreator.KoolkLVContainer();
+            this.bgImageContainer = new HaCreator.KoolkLVContainer();
+            this.lifePictureBox = new System.Windows.Forms.PictureBox();
+            this.portalImageContainer = new HaCreator.KoolkLVContainer();
+            this.miscItemsContainer = new HaCreator.KoolkLVContainer();
             this.dockSite2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bar1)).BeginInit();
             this.bar1.SuspendLayout();
@@ -187,13 +189,13 @@
             this.splitContainer9.Panel1.SuspendLayout();
             this.splitContainer9.Panel2.SuspendLayout();
             this.splitContainer9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lifePictureBox)).BeginInit();
             this.panelDockContainer5.SuspendLayout();
             this.panelDockContainer6.SuspendLayout();
             this.ribbonControl.SuspendLayout();
-            this.ribbonPanel2.SuspendLayout();
             this.ribbonPanel1.SuspendLayout();
+            this.ribbonPanel2.SuspendLayout();
             this.statusStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lifePictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // styleManager
@@ -266,12 +268,12 @@
             this.bar1.AccessibleRole = System.Windows.Forms.AccessibleRole.ToolBar;
             this.bar1.AutoSyncBarCaption = true;
             this.bar1.CloseSingleTab = true;
-            this.bar1.Controls.Add(this.panelDockContainer1);
+            this.bar1.Controls.Add(this.panelDockContainer4);
             this.bar1.Controls.Add(this.panelDockContainer2);
             this.bar1.Controls.Add(this.panelDockContainer3);
-            this.bar1.Controls.Add(this.panelDockContainer4);
             this.bar1.Controls.Add(this.panelDockContainer5);
             this.bar1.Controls.Add(this.panelDockContainer6);
+            this.bar1.Controls.Add(this.panelDockContainer1);
             this.bar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bar1.GrabHandleStyle = DevComponents.DotNetBar.eGrabHandleStyle.Caption;
             this.bar1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
@@ -284,13 +286,13 @@
             this.bar1.LayoutType = DevComponents.DotNetBar.eLayoutType.DockContainer;
             this.bar1.Location = new System.Drawing.Point(3, 0);
             this.bar1.Name = "bar1";
-            this.bar1.SelectedDockTab = 0;
+            this.bar1.SelectedDockTab = 3;
             this.bar1.Size = new System.Drawing.Size(273, 585);
             this.bar1.Stretch = true;
             this.bar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.bar1.TabIndex = 0;
             this.bar1.TabStop = false;
-            this.bar1.Text = "Tiles";
+            this.bar1.Text = "Life";
             // 
             // panelDockContainer1
             // 
@@ -362,16 +364,6 @@
             this.tileSetList.Size = new System.Drawing.Size(267, 111);
             this.tileSetList.TabIndex = 0;
             this.tileSetList.SelectedIndexChanged += new System.EventHandler(this.tileSetList_SelectedIndexChanged);
-            // 
-            // tileImagesContainer
-            // 
-            this.tileImagesContainer.AutoScroll = true;
-            this.tileImagesContainer.BackColor = System.Drawing.Color.White;
-            this.tileImagesContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tileImagesContainer.Location = new System.Drawing.Point(0, 0);
-            this.tileImagesContainer.Name = "tileImagesContainer";
-            this.tileImagesContainer.Size = new System.Drawing.Size(267, 380);
-            this.tileImagesContainer.TabIndex = 0;
             // 
             // panelDockContainer2
             // 
@@ -471,16 +463,6 @@
             this.objL1ListBox.TabIndex = 0;
             this.objL1ListBox.SelectedIndexChanged += new System.EventHandler(this.objL1ListBox_SelectedIndexChanged);
             // 
-            // objImagesContainer
-            // 
-            this.objImagesContainer.AutoScroll = true;
-            this.objImagesContainer.BackColor = System.Drawing.Color.White;
-            this.objImagesContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.objImagesContainer.Location = new System.Drawing.Point(0, 0);
-            this.objImagesContainer.Name = "objImagesContainer";
-            this.objImagesContainer.Size = new System.Drawing.Size(267, 317);
-            this.objImagesContainer.TabIndex = 0;
-            // 
             // panelDockContainer3
             // 
             this.panelDockContainer3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -577,16 +559,6 @@
             this.aniBg.TabIndex = 0;
             this.aniBg.Text = "Animated";
             this.aniBg.CheckedChanged += new System.EventHandler(this.bgSetListBox_SelectedIndexChanged);
-            // 
-            // bgImageContainer
-            // 
-            this.bgImageContainer.AutoScroll = true;
-            this.bgImageContainer.BackColor = System.Drawing.Color.White;
-            this.bgImageContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bgImageContainer.Location = new System.Drawing.Point(0, 0);
-            this.bgImageContainer.Name = "bgImageContainer";
-            this.bgImageContainer.Size = new System.Drawing.Size(267, 399);
-            this.bgImageContainer.TabIndex = 0;
             // 
             // panelDockContainer4
             // 
@@ -732,17 +704,6 @@
             this.lifeListBox.SelectedIndexChanged += new System.EventHandler(this.lifeListBox_SelectedIndexChanged);
             this.lifeListBox.SelectedValueChanged += new System.EventHandler(this.lifeListBox_SelectedValueChanged);
             // 
-            // lifePictureBox
-            // 
-            this.lifePictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lifePictureBox.Location = new System.Drawing.Point(0, 0);
-            this.lifePictureBox.Name = "lifePictureBox";
-            this.lifePictureBox.Size = new System.Drawing.Size(267, 349);
-            this.lifePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.lifePictureBox.TabIndex = 0;
-            this.lifePictureBox.TabStop = false;
-            this.lifePictureBox.Click += new System.EventHandler(this.lifePictureBox_Click);
-            // 
             // panelDockContainer5
             // 
             this.panelDockContainer5.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -757,16 +718,6 @@
             this.panelDockContainer5.Style.GradientAngle = 90;
             this.panelDockContainer5.TabIndex = 5;
             // 
-            // portalImageContainer
-            // 
-            this.portalImageContainer.AutoScroll = true;
-            this.portalImageContainer.BackColor = System.Drawing.Color.White;
-            this.portalImageContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.portalImageContainer.Location = new System.Drawing.Point(0, 0);
-            this.portalImageContainer.Name = "portalImageContainer";
-            this.portalImageContainer.Size = new System.Drawing.Size(267, 534);
-            this.portalImageContainer.TabIndex = 1;
-            // 
             // panelDockContainer6
             // 
             this.panelDockContainer6.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -780,15 +731,6 @@
             this.panelDockContainer6.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.ItemText;
             this.panelDockContainer6.Style.GradientAngle = 90;
             this.panelDockContainer6.TabIndex = 6;
-            // 
-            // miscItemsContainer
-            // 
-            this.miscItemsContainer.BackColor = System.Drawing.Color.White;
-            this.miscItemsContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.miscItemsContainer.Location = new System.Drawing.Point(0, 0);
-            this.miscItemsContainer.Name = "miscItemsContainer";
-            this.miscItemsContainer.Size = new System.Drawing.Size(267, 534);
-            this.miscItemsContainer.TabIndex = 1;
             // 
             // tileDockBox
             // 
@@ -923,6 +865,118 @@
             this.ribbonControl.Text = "ribbonControl1";
             this.ribbonControl.SizeChanged += new System.EventHandler(this.ribbonControl_SizeChanged);
             this.ribbonControl.Click += new System.EventHandler(this.ribbonControl_Click);
+            // 
+            // ribbonPanel1
+            // 
+            this.ribbonPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.ribbonPanel1.Controls.Add(this.ribbonBar5);
+            this.ribbonPanel1.Controls.Add(this.ribbonBar3);
+            this.ribbonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ribbonPanel1.Location = new System.Drawing.Point(0, 56);
+            this.ribbonPanel1.Name = "ribbonPanel1";
+            this.ribbonPanel1.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.ribbonPanel1.Size = new System.Drawing.Size(605, 96);
+            // 
+            // 
+            // 
+            this.ribbonPanel1.Style.Class = "";
+            this.ribbonPanel1.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.ribbonPanel1.StyleMouseDown.Class = "";
+            this.ribbonPanel1.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.ribbonPanel1.StyleMouseOver.Class = "";
+            this.ribbonPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.ribbonPanel1.TabIndex = 3;
+            this.ribbonPanel1.Visible = false;
+            // 
+            // ribbonBar5
+            // 
+            this.ribbonBar5.AutoOverflowEnabled = true;
+            // 
+            // 
+            // 
+            this.ribbonBar5.BackgroundMouseOverStyle.Class = "";
+            this.ribbonBar5.BackgroundMouseOverStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.ribbonBar5.BackgroundStyle.Class = "";
+            this.ribbonBar5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.ribbonBar5.ContainerControlProcessDialogKey = true;
+            this.ribbonBar5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.ribbonBar5.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.mapSimulator,
+            this.regenMinimap,
+            this.VREdit});
+            this.ribbonBar5.Location = new System.Drawing.Point(175, 0);
+            this.ribbonBar5.Name = "ribbonBar5";
+            this.ribbonBar5.Size = new System.Drawing.Size(185, 93);
+            this.ribbonBar5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.ribbonBar5.TabIndex = 1;
+            this.ribbonBar5.Text = "Tools";
+            // 
+            // 
+            // 
+            this.ribbonBar5.TitleStyle.Class = "";
+            this.ribbonBar5.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.ribbonBar5.TitleStyleMouseOver.Class = "";
+            this.ribbonBar5.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // ribbonBar3
+            // 
+            this.ribbonBar3.AutoOverflowEnabled = true;
+            // 
+            // 
+            // 
+            this.ribbonBar3.BackgroundMouseOverStyle.Class = "";
+            this.ribbonBar3.BackgroundMouseOverStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.ribbonBar3.BackgroundStyle.Class = "";
+            this.ribbonBar3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.ribbonBar3.ContainerControlProcessDialogKey = true;
+            this.ribbonBar3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.ribbonBar3.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.itemContainer6});
+            this.ribbonBar3.Location = new System.Drawing.Point(3, 0);
+            this.ribbonBar3.Name = "ribbonBar3";
+            this.ribbonBar3.Size = new System.Drawing.Size(172, 93);
+            this.ribbonBar3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.ribbonBar3.TabIndex = 0;
+            this.ribbonBar3.Text = "Options";
+            // 
+            // 
+            // 
+            this.ribbonBar3.TitleStyle.Class = "";
+            this.ribbonBar3.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.ribbonBar3.TitleStyleMouseOver.Class = "";
+            this.ribbonBar3.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // itemContainer6
+            // 
+            // 
+            // 
+            // 
+            this.itemContainer6.BackgroundStyle.Class = "";
+            this.itemContainer6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.itemContainer6.Name = "itemContainer6";
+            this.itemContainer6.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.settingsButton,
+            this.snapButton,
+            this.randomTiles});
+            this.itemContainer6.VerticalItemAlignment = DevComponents.DotNetBar.eVerticalItemsAlignment.Middle;
             // 
             // ribbonPanel2
             // 
@@ -1102,36 +1156,6 @@
             this.emulateParallax});
             this.itemContainer7.VerticalItemAlignment = DevComponents.DotNetBar.eVerticalItemsAlignment.Middle;
             // 
-            // showVR
-            // 
-            this.showVR.AutoCheckOnClick = true;
-            this.showVR.Checked = true;
-            this.showVR.Image = global::HaCreator.Properties.Resources.ShowVR;
-            this.showVR.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.showVR.Name = "showVR";
-            this.showVR.Text = "Show VR";
-            this.showVR.CheckedChanged += new System.EventHandler(this.showVR_CheckChanged);
-            // 
-            // showMinimap
-            // 
-            this.showMinimap.AutoCheckOnClick = true;
-            this.showMinimap.Checked = true;
-            this.showMinimap.Image = global::HaCreator.Properties.Resources.Minimap;
-            this.showMinimap.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.showMinimap.Name = "showMinimap";
-            this.showMinimap.Text = "Show Minimap";
-            this.showMinimap.CheckedChanged += new System.EventHandler(this.showMinimap_CheckedChanged);
-            // 
-            // emulateParallax
-            // 
-            this.emulateParallax.AutoCheckOnClick = true;
-            this.emulateParallax.Checked = true;
-            this.emulateParallax.Image = global::HaCreator.Properties.Resources.diagram_parallax;
-            this.emulateParallax.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.emulateParallax.Name = "emulateParallax";
-            this.emulateParallax.Text = "Parallax BGs";
-            this.emulateParallax.CheckedChanged += new System.EventHandler(this.emulateParallax_CheckedChanged);
-            // 
             // ribbonBar1
             // 
             this.ribbonBar1.AutoOverflowEnabled = true;
@@ -1297,98 +1321,83 @@
             this.viewBackgrounds.CheckedChanging += new DevComponents.DotNetBar.CheckBoxChangeEventHandler(this.viewCheckboxes_CheckedChanging);
             this.viewBackgrounds.CheckedChanged += new DevComponents.DotNetBar.CheckBoxChangeEventHandler(this.viewCheckboxes_CheckedChanged);
             // 
-            // ribbonPanel1
+            // viewTab
             // 
-            this.ribbonPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.ribbonPanel1.Controls.Add(this.ribbonBar3);
-            this.ribbonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ribbonPanel1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonPanel1.Name = "ribbonPanel1";
-            this.ribbonPanel1.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.ribbonPanel1.Size = new System.Drawing.Size(605, 152);
+            this.viewTab.Checked = true;
+            this.viewTab.Name = "viewTab";
+            this.viewTab.Panel = this.ribbonPanel2;
+            this.viewTab.Text = "View";
             // 
+            // toolsTab
             // 
+            this.toolsTab.Name = "toolsTab";
+            this.toolsTab.Panel = this.ribbonPanel1;
+            this.toolsTab.Text = "Tools";
             // 
-            this.ribbonPanel1.Style.Class = "";
-            this.ribbonPanel1.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // statusStrip
             // 
+            this.statusStrip.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cordsLabel,
+            this.itemDescLabel});
+            this.statusStrip.Location = new System.Drawing.Point(5, 561);
+            this.statusStrip.Name = "statusStrip";
+            this.statusStrip.Size = new System.Drawing.Size(605, 25);
+            this.statusStrip.TabIndex = 11;
+            this.statusStrip.Text = "toolStrip1";
             // 
+            // cordsLabel
             // 
-            this.ribbonPanel1.StyleMouseDown.Class = "";
-            this.ribbonPanel1.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.cordsLabel.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.cordsLabel.Name = "cordsLabel";
+            this.cordsLabel.Size = new System.Drawing.Size(36, 22);
+            this.cordsLabel.Text = "cords";
             // 
+            // itemDescLabel
             // 
+            this.itemDescLabel.Name = "itemDescLabel";
+            this.itemDescLabel.Size = new System.Drawing.Size(31, 22);
+            this.itemDescLabel.Text = "desc";
             // 
-            this.ribbonPanel1.StyleMouseOver.Class = "";
-            this.ribbonPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.ribbonPanel1.TabIndex = 3;
-            this.ribbonPanel1.Visible = false;
+            // multiBoard
             // 
-            // ribbonBar3
+            this.multiBoard.DeviceReady = false;
+            this.multiBoard.Location = new System.Drawing.Point(202, 231);
+            this.multiBoard.Name = "multiBoard";
+            this.multiBoard.SelectedBoard = null;
+            this.multiBoard.Size = new System.Drawing.Size(109, 93);
+            this.multiBoard.TabIndex = 10;
+            this.multiBoard.MouseMoved += new HaCreator.MapEditor.MultiBoard.MouseMovedDelegate(this.multiBoard_MouseMoved);
+            this.multiBoard.OnUndoListChanged += new HaCreator.MapEditor.MultiBoard.UndoRedoDelegate(this.multiBoard_OnUndoListChanged);
+            this.multiBoard.OnRedoListChanged += new HaCreator.MapEditor.MultiBoard.UndoRedoDelegate(this.multiBoard_OnRedoListChanged);
+            this.multiBoard.OnLayerTSChanged += new HaCreator.MapEditor.MultiBoard.LayerTSChangedDelegate(this.multiBoard_OnLayerTSChanged);
+            this.multiBoard.OnEditInstanceClicked += new HaCreator.MapEditor.MultiBoard.MenuItemClickedDelegate(this.multiBoard_OnEditInstanceClicked);
+            this.multiBoard.OnEditBaseClicked += new HaCreator.MapEditor.MultiBoard.MenuItemClickedDelegate(this.multiBoard_OnEditBaseClicked);
+            this.multiBoard.OnSendToBackClicked += new HaCreator.MapEditor.MultiBoard.MenuItemClickedDelegate(this.multiBoard_OnSendToBackClicked);
+            this.multiBoard.OnBringToFrontClicked += new HaCreator.MapEditor.MultiBoard.MenuItemClickedDelegate(this.multiBoard_OnBringToFrontClicked);
+            this.multiBoard.ReturnToSelectionState += new HaCreator.MapEditor.MultiBoard.ReturnToSelectionStateDelegate(this.multiBoard_ReturnToSelectionState);
+            this.multiBoard.SelectedItemChanged += new HaCreator.MapEditor.MultiBoard.SelectedItemChangedDelegate(this.multiBoard_SelectedItemChanged);
             // 
-            this.ribbonBar3.AutoOverflowEnabled = true;
+            // Tabs
             // 
+            this.Tabs.CurrentPage = null;
+            this.Tabs.Location = new System.Drawing.Point(82, 179);
+            this.Tabs.Name = "Tabs";
+            this.Tabs.Size = new System.Drawing.Size(242, 186);
+            this.Tabs.TabColor = System.Drawing.Color.LightSteelBlue;
+            this.Tabs.TabIndex = 9;
+            this.Tabs.Text = "pageCollection1";
+            this.Tabs.TopMargin = 3;
+            this.Tabs.CurrentPageChanged += new TabPages.PageCollection.CurrentPageChangedEventHandler(this.Tabs_CurrentPageChanged);
+            this.Tabs.PageClosing += new TabPages.PageCollection.PageClosingEventHandler(this.Tabs_PageClosing);
             // 
+            // mapSimulator
             // 
-            this.ribbonBar3.BackgroundMouseOverStyle.Class = "";
-            this.ribbonBar3.BackgroundMouseOverStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.ribbonBar3.BackgroundStyle.Class = "";
-            this.ribbonBar3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.ribbonBar3.ContainerControlProcessDialogKey = true;
-            this.ribbonBar3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.ribbonBar3.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.itemContainer6});
-            this.ribbonBar3.Location = new System.Drawing.Point(3, 0);
-            this.ribbonBar3.Name = "ribbonBar3";
-            this.ribbonBar3.Size = new System.Drawing.Size(300, 149);
-            this.ribbonBar3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.ribbonBar3.TabIndex = 0;
-            this.ribbonBar3.Text = "Options";
-            // 
-            // 
-            // 
-            this.ribbonBar3.TitleStyle.Class = "";
-            this.ribbonBar3.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.ribbonBar3.TitleStyleMouseOver.Class = "";
-            this.ribbonBar3.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // itemContainer6
-            // 
-            // 
-            // 
-            // 
-            this.itemContainer6.BackgroundStyle.Class = "";
-            this.itemContainer6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.itemContainer6.Name = "itemContainer6";
-            this.itemContainer6.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.settingsButton,
-            this.mapSimulatorButton,
-            this.regenMinimap,
-            this.snapButton,
-            this.randomTiles});
-            this.itemContainer6.VerticalItemAlignment = DevComponents.DotNetBar.eVerticalItemsAlignment.Middle;
-            // 
-            // settingsButton
-            // 
-            this.settingsButton.Image = global::HaCreator.Properties.Resources.Settings_big;
-            this.settingsButton.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.settingsButton.Name = "settingsButton";
-            this.settingsButton.Text = "Settings...";
-            this.settingsButton.Click += new System.EventHandler(this.showSettingsForm);
-            // 
-            // mapSimulatorButton
-            // 
-            this.mapSimulatorButton.Image = global::HaCreator.Properties.Resources.Play_1_Hot_icon;
-            this.mapSimulatorButton.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.mapSimulatorButton.Name = "mapSimulatorButton";
-            this.mapSimulatorButton.Text = "Map Simulation";
-            this.mapSimulatorButton.Click += new System.EventHandler(this.mapSimulatorButton_Click);
+            this.mapSimulator.Image = global::HaCreator.Properties.Resources.Play_1_Hot_icon;
+            this.mapSimulator.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.mapSimulator.Name = "mapSimulator";
+            this.mapSimulator.Text = "Map Simulation";
+            this.mapSimulator.Click += new System.EventHandler(this.mapSimulatorButton_Click);
             // 
             // regenMinimap
             // 
@@ -1397,6 +1406,22 @@
             this.regenMinimap.Name = "regenMinimap";
             this.regenMinimap.Text = "Regenerate Minimap";
             this.regenMinimap.Click += new System.EventHandler(this.regenMinimap_Click);
+            // 
+            // VREdit
+            // 
+            this.VREdit.Image = global::HaCreator.Properties.Resources.ShowVR;
+            this.VREdit.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.VREdit.Name = "VREdit";
+            this.VREdit.Text = "Edit VR";
+            this.VREdit.Click += new System.EventHandler(this.VREdit_Click);
+            // 
+            // settingsButton
+            // 
+            this.settingsButton.Image = global::HaCreator.Properties.Resources.Settings_big;
+            this.settingsButton.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.settingsButton.Name = "settingsButton";
+            this.settingsButton.Text = "Settings...";
+            this.settingsButton.Click += new System.EventHandler(this.showSettingsForm);
             // 
             // snapButton
             // 
@@ -1418,18 +1443,35 @@
             this.randomTiles.Text = "Random Tiles";
             this.randomTiles.CheckedChanged += new System.EventHandler(this.randomTiles_CheckedChanged);
             // 
-            // viewTab
+            // showVR
             // 
-            this.viewTab.Checked = true;
-            this.viewTab.Name = "viewTab";
-            this.viewTab.Panel = this.ribbonPanel2;
-            this.viewTab.Text = "View";
+            this.showVR.AutoCheckOnClick = true;
+            this.showVR.Checked = true;
+            this.showVR.Image = global::HaCreator.Properties.Resources.ShowVR;
+            this.showVR.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.showVR.Name = "showVR";
+            this.showVR.Text = "Show VR";
+            this.showVR.CheckedChanged += new System.EventHandler(this.showVR_CheckChanged);
             // 
-            // toolsTab
+            // showMinimap
             // 
-            this.toolsTab.Name = "toolsTab";
-            this.toolsTab.Panel = this.ribbonPanel1;
-            this.toolsTab.Text = "Tools";
+            this.showMinimap.AutoCheckOnClick = true;
+            this.showMinimap.Checked = true;
+            this.showMinimap.Image = global::HaCreator.Properties.Resources.Minimap;
+            this.showMinimap.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.showMinimap.Name = "showMinimap";
+            this.showMinimap.Text = "Show Minimap";
+            this.showMinimap.CheckedChanged += new System.EventHandler(this.showMinimap_CheckedChanged);
+            // 
+            // emulateParallax
+            // 
+            this.emulateParallax.AutoCheckOnClick = true;
+            this.emulateParallax.Checked = true;
+            this.emulateParallax.Image = global::HaCreator.Properties.Resources.diagram_parallax;
+            this.emulateParallax.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.emulateParallax.Name = "emulateParallax";
+            this.emulateParallax.Text = "Parallax BGs";
+            this.emulateParallax.CheckedChanged += new System.EventHandler(this.emulateParallax_CheckedChanged);
             // 
             // office2007StartButton1
             // 
@@ -1580,62 +1622,65 @@
             this.redoButton.Tooltip = "Redo";
             this.redoButton.Click += new System.EventHandler(this.redoButton_Click);
             // 
-            // statusStrip
+            // tileImagesContainer
             // 
-            this.statusStrip.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cordsLabel,
-            this.itemDescLabel});
-            this.statusStrip.Location = new System.Drawing.Point(5, 561);
-            this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(605, 25);
-            this.statusStrip.TabIndex = 11;
-            this.statusStrip.Text = "toolStrip1";
+            this.tileImagesContainer.AutoScroll = true;
+            this.tileImagesContainer.BackColor = System.Drawing.Color.White;
+            this.tileImagesContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tileImagesContainer.Location = new System.Drawing.Point(0, 0);
+            this.tileImagesContainer.Name = "tileImagesContainer";
+            this.tileImagesContainer.Size = new System.Drawing.Size(267, 380);
+            this.tileImagesContainer.TabIndex = 0;
             // 
-            // cordsLabel
+            // objImagesContainer
             // 
-            this.cordsLabel.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.cordsLabel.Name = "cordsLabel";
-            this.cordsLabel.Size = new System.Drawing.Size(36, 22);
-            this.cordsLabel.Text = "cords";
+            this.objImagesContainer.AutoScroll = true;
+            this.objImagesContainer.BackColor = System.Drawing.Color.White;
+            this.objImagesContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.objImagesContainer.Location = new System.Drawing.Point(0, 0);
+            this.objImagesContainer.Name = "objImagesContainer";
+            this.objImagesContainer.Size = new System.Drawing.Size(267, 317);
+            this.objImagesContainer.TabIndex = 0;
             // 
-            // itemDescLabel
+            // bgImageContainer
             // 
-            this.itemDescLabel.Name = "itemDescLabel";
-            this.itemDescLabel.Size = new System.Drawing.Size(31, 22);
-            this.itemDescLabel.Text = "desc";
+            this.bgImageContainer.AutoScroll = true;
+            this.bgImageContainer.BackColor = System.Drawing.Color.White;
+            this.bgImageContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bgImageContainer.Location = new System.Drawing.Point(0, 0);
+            this.bgImageContainer.Name = "bgImageContainer";
+            this.bgImageContainer.Size = new System.Drawing.Size(267, 399);
+            this.bgImageContainer.TabIndex = 0;
             // 
-            // multiBoard
+            // lifePictureBox
             // 
-            this.multiBoard.DeviceReady = false;
-            this.multiBoard.Location = new System.Drawing.Point(202, 231);
-            this.multiBoard.Name = "multiBoard";
-            this.multiBoard.SelectedBoard = null;
-            this.multiBoard.Size = new System.Drawing.Size(109, 93);
-            this.multiBoard.TabIndex = 10;
-            this.multiBoard.MouseMoved += new HaCreator.MapEditor.MultiBoard.MouseMovedDelegate(this.multiBoard_MouseMoved);
-            this.multiBoard.OnUndoListChanged += new HaCreator.MapEditor.MultiBoard.UndoRedoDelegate(this.multiBoard_OnUndoListChanged);
-            this.multiBoard.OnRedoListChanged += new HaCreator.MapEditor.MultiBoard.UndoRedoDelegate(this.multiBoard_OnRedoListChanged);
-            this.multiBoard.OnLayerTSChanged += new HaCreator.MapEditor.MultiBoard.LayerTSChangedDelegate(this.multiBoard_OnLayerTSChanged);
-            this.multiBoard.OnEditInstanceClicked += new HaCreator.MapEditor.MultiBoard.MenuItemClickedDelegate(this.multiBoard_OnEditInstanceClicked);
-            this.multiBoard.OnEditBaseClicked += new HaCreator.MapEditor.MultiBoard.MenuItemClickedDelegate(this.multiBoard_OnEditBaseClicked);
-            this.multiBoard.OnSendToBackClicked += new HaCreator.MapEditor.MultiBoard.MenuItemClickedDelegate(this.multiBoard_OnSendToBackClicked);
-            this.multiBoard.OnBringToFrontClicked += new HaCreator.MapEditor.MultiBoard.MenuItemClickedDelegate(this.multiBoard_OnBringToFrontClicked);
-            this.multiBoard.ReturnToSelectionState += new HaCreator.MapEditor.MultiBoard.ReturnToSelectionStateDelegate(this.multiBoard_ReturnToSelectionState);
-            this.multiBoard.SelectedItemChanged += new HaCreator.MapEditor.MultiBoard.SelectedItemChangedDelegate(this.multiBoard_SelectedItemChanged);
+            this.lifePictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lifePictureBox.Location = new System.Drawing.Point(0, 0);
+            this.lifePictureBox.Name = "lifePictureBox";
+            this.lifePictureBox.Size = new System.Drawing.Size(267, 349);
+            this.lifePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.lifePictureBox.TabIndex = 0;
+            this.lifePictureBox.TabStop = false;
+            this.lifePictureBox.Click += new System.EventHandler(this.lifePictureBox_Click);
             // 
-            // Tabs
+            // portalImageContainer
             // 
-            this.Tabs.CurrentPage = null;
-            this.Tabs.Location = new System.Drawing.Point(82, 179);
-            this.Tabs.Name = "Tabs";
-            this.Tabs.Size = new System.Drawing.Size(242, 186);
-            this.Tabs.TabColor = System.Drawing.Color.LightSteelBlue;
-            this.Tabs.TabIndex = 9;
-            this.Tabs.Text = "pageCollection1";
-            this.Tabs.TopMargin = 3;
-            this.Tabs.CurrentPageChanged += new TabPages.PageCollection.CurrentPageChangedEventHandler(this.Tabs_CurrentPageChanged);
-            this.Tabs.PageClosing += new TabPages.PageCollection.PageClosingEventHandler(this.Tabs_PageClosing);
+            this.portalImageContainer.AutoScroll = true;
+            this.portalImageContainer.BackColor = System.Drawing.Color.White;
+            this.portalImageContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.portalImageContainer.Location = new System.Drawing.Point(0, 0);
+            this.portalImageContainer.Name = "portalImageContainer";
+            this.portalImageContainer.Size = new System.Drawing.Size(267, 534);
+            this.portalImageContainer.TabIndex = 1;
+            // 
+            // miscItemsContainer
+            // 
+            this.miscItemsContainer.BackColor = System.Drawing.Color.White;
+            this.miscItemsContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.miscItemsContainer.Location = new System.Drawing.Point(0, 0);
+            this.miscItemsContainer.Name = "miscItemsContainer";
+            this.miscItemsContainer.Size = new System.Drawing.Size(267, 534);
+            this.miscItemsContainer.TabIndex = 1;
             // 
             // Editor
             // 
@@ -1705,15 +1750,15 @@
             this.splitContainer9.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer9)).EndInit();
             this.splitContainer9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.lifePictureBox)).EndInit();
             this.panelDockContainer5.ResumeLayout(false);
             this.panelDockContainer6.ResumeLayout(false);
             this.ribbonControl.ResumeLayout(false);
             this.ribbonControl.PerformLayout();
-            this.ribbonPanel2.ResumeLayout(false);
             this.ribbonPanel1.ResumeLayout(false);
+            this.ribbonPanel2.ResumeLayout(false);
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lifePictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1773,8 +1818,6 @@
         private DevComponents.DotNetBar.RibbonBar ribbonBar3;
         private DevComponents.DotNetBar.ItemContainer itemContainer6;
         private DevComponents.DotNetBar.ButtonItem settingsButton;
-        private DevComponents.DotNetBar.ButtonItem mapSimulatorButton;
-        private DevComponents.DotNetBar.ButtonItem regenMinimap;
         private DevComponents.DotNetBar.ButtonItem snapButton;
         private DevComponents.DotNetBar.ButtonItem randomTiles;
         private DevComponents.DotNetBar.ItemContainer itemContainer7;
@@ -1835,5 +1878,9 @@
         private System.Windows.Forms.PictureBox lifePictureBox;
         private KoolkLVContainer portalImageContainer;
         private DevComponents.DotNetBar.ButtonItem btnHelp;
+        private DevComponents.DotNetBar.RibbonBar ribbonBar5;
+        private DevComponents.DotNetBar.ButtonItem mapSimulator;
+        private DevComponents.DotNetBar.ButtonItem regenMinimap;
+        private DevComponents.DotNetBar.ButtonItem VREdit;
     }
 }

@@ -602,6 +602,57 @@ namespace HaCreator.MapEditor
         public fhGroup Group { get { return group; } set { group = value; } }
 
         public int num; //temporary, for saving.
+
+        /// <summary>
+        /// Used to find the FootholdLine that's below a Life object
+        /// </summary>
+        /// <param name="p">The point that the FootholdLine should be</param>
+        /// <param name="mapBoard">The editor's mapBoard</param>
+        /// <returns>Null if can't find a FootholdLine near p, otherwise returns the FootholdLine</returns>
+        public static FootholdLine findBelow(Point p, Board mapBoard)
+        {
+            // find fhs with matching x coordinates
+            List<FootholdLine> xMatches = new List<FootholdLine>();
+            FootholdLine nearestFh = null;
+            int nearestDistance = 0;
+            foreach (FootholdLine fh in mapBoard.BoardItems.FootholdLines)
+            {
+                if (fh.FirstDot.X <= p.X && fh.SecondDot.X >= p.X)
+                    xMatches.Add(fh);
+            }
+            //xMatches.Sort();
+            foreach (FootholdLine fh in xMatches)
+            {
+                if (!fh.IsWall && fh.FirstDot.Y != fh.SecondDot.Y)
+                {
+                    int calcY;
+                    double s1 = Math.Abs(fh.SecondDot.Y - fh.FirstDot.Y);
+                    double s2 = Math.Abs(fh.SecondDot.X - fh.FirstDot.X);
+                    double s4 = Math.Abs(p.X - fh.FirstDot.X);
+                    double alpha = Math.Atan(s2 / s1);
+                    double beta = Math.Atan(s1 / s2);
+                    double s5 = Math.Cos(alpha) * (s4 / Math.Cos(beta));
+                    if (fh.SecondDot.Y < fh.FirstDot.Y)
+                        calcY = fh.FirstDot.Y - (int)s5;
+                    else
+                        calcY = fh.FirstDot.Y + (int)s5;
+                    if (calcY >= p.Y && (nearestFh == null || calcY - p.Y < nearestDistance))
+                    {
+                        nearestFh = fh;
+                        nearestDistance = calcY - p.Y;
+                    }
+                }
+                else if (!fh.IsWall)
+                {
+                    if (fh.FirstDot.Y >= p.Y && (nearestFh == null || fh.FirstDot.Y - p.Y < nearestDistance))
+                    {
+                        nearestFh = fh;
+                        nearestDistance = fh.FirstDot.Y - p.Y;
+                    }
+                }
+            }
+            return nearestFh;
+        }
     }
 
     public class RopeLine : MapleLine

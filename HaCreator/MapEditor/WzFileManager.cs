@@ -87,7 +87,7 @@ namespace HaCreator.MapEditor
                     image.SaveImage(version);
                 //}
                 ((WzFile)wzFiles["map"]).SaveToDisk(path + "\\Map.wz", progressBar);
-                if (progressBar != null) { progressBar.PerformStep(); progressBar.Refresh(); } //100%
+                if (progressBar != null) { progressBar.Value = progressBar.Maximum; progressBar.Refresh(); } //100%
                 return true;
             }
             catch (Exception WTFBBQ)

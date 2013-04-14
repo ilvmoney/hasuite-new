@@ -312,7 +312,6 @@ namespace HaCreator.GUI
         {
             if (multiBoard.SelectedBoard.RegenerateMinimap())
                 new GUI.InfoMsgBox("Success", "Minimap regenerated successfully");
-            //MessageBox.Show("Minimap regenerated successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
             {
                 //MessageBox.Show("An error occured during minimap regeneration. The error has been logged. If possible, save the map and send it to haha01haha01@gmail.com", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -1020,6 +1019,11 @@ namespace HaCreator.GUI
         private void lifePictureBox_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void VREdit_Click(object sender, EventArgs e)
+        {
+            new VREditor(multiBoard.SelectedBoard).ShowDialog();
         }
     }
 }

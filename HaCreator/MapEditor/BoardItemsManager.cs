@@ -145,6 +145,17 @@ namespace HaCreator.MapEditor
                 //if (item is TileInstance) Tiles.Remove((LayeredItem)item);
                 //if (item is ObjectInstance) Objects.Remove((LayeredItem)item);
             }
+            else if (item is LifeInstance)
+            {
+                if (item.BaseInfo is NpcInfo)
+                {
+                    NPCs.Remove((LifeInstance)item);
+                }
+                else if (item.BaseInfo is MobInfo)
+                {
+                    Mobs.Remove((LifeInstance)item);
+                }
+            }
             else
             {
                 Type itemType = item.GetType();
@@ -168,6 +179,18 @@ namespace HaCreator.MapEditor
                 TileObjs.Add((LayeredItem)item);
                 //if (item is TileInstance) Tiles.Add((LayeredItem)item);
                 //if (item is ObjectInstance) Objects.Add((LayeredItem)item);
+                if (sort) Sort();
+            }
+            else if (item is LifeInstance)
+            {
+                if (item.BaseInfo is NpcInfo)
+                {
+                    NPCs.Add((LifeInstance)item);
+                }
+                else if (item.BaseInfo is MobInfo)
+                {
+                    Mobs.Add((LifeInstance)item);
+                }
                 if (sort) Sort();
             }
             else

@@ -26,9 +26,12 @@ namespace MapleLib.WzLib.WzStructure
     /// </summary>
     public struct MapleBool //I know I could have used the nullable bool.
     {
+        //public static readonly byte NotExist = 0;
+        //public static readonly byte False = 1;
+        //public static readonly byte True = 2;
         public static readonly byte NotExist = 0;
-        public static readonly byte False = 1;
-        public static readonly byte True = 2;
+        public static readonly byte False = 0;
+        public static readonly byte True = 1;
 
         private byte val { get; set; }
         public static implicit operator MapleBool(byte value)
